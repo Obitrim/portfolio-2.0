@@ -1,0 +1,4 @@
+green: #00BD95
+green light: #18CD8A
+light dark: #20272F
+darker: #171C22
