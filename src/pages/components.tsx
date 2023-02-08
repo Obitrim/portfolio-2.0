@@ -10,18 +10,18 @@ import {
   HiPlus,
 } from 'react-icons/hi';
 
-import Button from '@/components/buttons/Button';
-import IconButton from '@/components/buttons/IconButton';
-import TextButton from '@/components/buttons/TextButton';
-import Layout from '@/components/layout/Layout';
-import ArrowLink from '@/components/links/ArrowLink';
-import ButtonLink from '@/components/links/ButtonLink';
-import PrimaryLink from '@/components/links/PrimaryLink';
-import UnderlineLink from '@/components/links/UnderlineLink';
-import UnstyledLink from '@/components/links/UnstyledLink';
-import NextImage from '@/components/NextImage';
-import Seo from '@/components/Seo';
-import Skeleton from '@/components/Skeleton';
+import Button from '@/components/v1/buttons/Button';
+import IconButton from '@/components/v1/buttons/IconButton';
+import TextButton from '@/components/v1/buttons/TextButton';
+import Layout from '@/components/v1/layout/Layout';
+import ArrowLink from '@/components/v1/links/ArrowLink';
+import ButtonLink from '@/components/v1/links/ButtonLink';
+import PrimaryLink from '@/components/v1/links/PrimaryLink';
+import UnderlineLink from '@/components/v1/links/UnderlineLink';
+import UnstyledLink from '@/components/v1/links/UnstyledLink';
+import NextImage from '@/components/v1/NextImage';
+import Seo from '@/components/v1/Seo';
+import Skeleton from '@/components/v1/Skeleton';
 
 type Color = (typeof colorList)[number];
 

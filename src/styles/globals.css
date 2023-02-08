@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 :root {
+  --light-dark: #20272f;
+  --dark: #171c22;
+  --primary: #00bd95;
+  --light-primary: #18cd8a;
   /* #region  /**=========== Primary Color =========== */
   /* !STARTERCONF Customize these variable, copy and paste from /styles/colors.css for list of colors */
   --tw-color-primary-50: 240 249 255;
@@ -26,6 +30,22 @@
   --color-primary-800: rgb(var(--tw-color-primary-800)); /* #075985 */
   --color-primary-900: rgb(var(--tw-color-primary-900)); /* #0c4a6e */
   /* #endregion  /**======== Primary Color =========== */
+}
+
+body {
+  background-color: var(--light-dark);
+  @apply text-white;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-light-primary {
+  color: var(--light-primary);
+}
+.bg-dark {
+  background-color: var(--light-dark);
 }
 
 @layer base {
