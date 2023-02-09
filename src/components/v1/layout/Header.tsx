@@ -16,13 +16,13 @@ export default function Header() {
 
   const isActive = (routePath: string) => router.pathname === routePath;
   return (
-    <header className='sticky top-0 z-50 '>
+    <header className='sticky top-0 z-50 bg-dark'>
       <AppContainer className='flex h-14 items-center justify-between'>
         <UnstyledLink href='/' className='font-bold hover:text-gray-600'>
           Xcoda.me
         </UnstyledLink>
         <nav>
-          <ul className='flex items-center justify-between space-x-4'>
+          <ul className='flex items-center justify-between space-x-8'>
             {links.map(({ href, label }) => (
               <li key={`${href}${label}`}>
                 <UnstyledLink
