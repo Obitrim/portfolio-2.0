@@ -1,0 +1,26 @@
+.swiper {
+  width: 60vw !important;
+  height: 50vw;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.mochi-library-swiper .swiper-slide:not(.swiper-slide-visible),
+.mochi-library-swiper .swiper-slide:not(.active-card) {
+  /* filter: blur(4px); */
+}
+
+@media (min-width: 768px) {
+  .swiper {
+    width: 30vw;
+    height: 25vw;
+  }
+}
