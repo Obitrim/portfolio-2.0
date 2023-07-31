@@ -18,8 +18,11 @@ export default function Header() {
   return (
     <header className='sticky top-0 z-50 bg-dark'>
       <AppContainer className='flex h-14 items-center justify-between'>
-        <UnstyledLink href='/' className='font-bold hover:text-gray-600'>
-          Xcoda.me
+        <UnstyledLink
+          href='/'
+          className='font-grotest font-bold hover:text-gray-300'
+        >
+          🖥️ Xcoda.me
         </UnstyledLink>
         <nav>
           <ul className='flex items-center justify-between space-x-8'>
