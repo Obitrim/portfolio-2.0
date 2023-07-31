@@ -10,11 +10,11 @@ interface CardProps extends ComponentPropsWithoutRef<'div'> {
 
 const TestimonialCard = ({ className, ...props }: CardProps) => {
   return (
-    <BaseCard className={className} {...props}>
+    <BaseCard className={clsx('shadow-2xl', className)} {...props}>
       {/* quote icon */}
       <ImQuotesLeft className='text-primary text-5xl opacity-60' />
       {/* Comment */}
-      <p className='text-medium my-4 text-gray-400'>
+      <p className='text-medium my-4 text-gray-300'>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste nobis
         earum voluptate error inventore iure dolorum delectus maiores possimus
         veritatis.
@@ -23,7 +23,7 @@ const TestimonialCard = ({ className, ...props }: CardProps) => {
       <div className={clsx('flex items-center gap-2')}>
         {/* eslint-disable-next-line @next/next/no-img-element*/}
         <img className='h-10 w-10 rounded-full object-cover' src='' alt='' />
-        <p>
+        <p className='text-gray-300'>
           Lorem, ipsum dolor. <br />{' '}
           <span className={clsx('text-gray-400')}>Software Engineer</span>
         </p>
