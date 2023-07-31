@@ -1,3 +1,6 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -32,9 +35,20 @@
   /* #endregion  /**======== Primary Color =========== */
 }
 
+/* .font-grotest {
+  font-family: 'Epilogue', sans-serif !important;
+} */
+.font-grotest {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
 body {
   background-color: var(--light-dark);
   @apply text-white;
+}
+
+* {
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .text-primary {
@@ -66,8 +80,19 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--primary);
-  @apply rounded-full;
+  /* background-color: var(--primary); */
+  @apply rounded-full bg-gray-500;
+}
+
+.p-wavy-pattern {
+  @apply relative z-10 !bg-opacity-90;
+  background-color: transparent;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      var(--light-dark) 22px
+    ),
+    repeating-linear-gradient(var(--dark), var(--light-dark));
 }
 
 @layer base {

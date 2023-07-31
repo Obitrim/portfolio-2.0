@@ -1,29 +1,31 @@
-import clsx from 'clsx';
 import React from 'react';
-import { RiInstagramLine, RiTwitterLine } from 'react-icons/ri';
 
-import Button from '@/components/v1/buttons/Button';
 import AppContainer from '@/components/v1/hoc/container/index.container';
 
 const HomeBannerSection = () => {
   return (
-    <section className='v-whitespace'>
-      <AppContainer className='grid md:grid-cols-2'>
+    <section className='v-whitespace bg-darker text-gray-300 md:h-screen'>
+      <AppContainer className='grid h-full -translate-y-10 content-center md:grid-cols-2'>
         {/* Left side */}
         <article>
-          <p>
-            Hi, <span className='text-primary'>I'm</span>
+          <p className='font-grotest text-5xl'>Hello,</p>
+          {/* <h2 className=' text-2xl '>
+            I'm <span className='text-primary'>Obitrim Paul</span>
+          </h2> */}
+          <h1 className='font-grotest text-5xl'>I'm Obitrim Paul</h1>
+          <p className='my-6 text-lg text-gray-300'>
+            From building intuitive User Interfaces(UI) for fun to building
+            <span className='text-primary font-semibold'>
+              &nbsp;robust
+            </span>,{' '}
+            <span className='text-primary font-semibold'>reliable</span> and{' '}
+            <span className='text-primary font-semibold'>scalable</span> web
+            applications as a{' '}
+            <span className='text-primary'>fullstack developer</span> that make
+            a difference.
           </p>
-          <h2 className='text-primary text-xl '>Obitrim Paul</h2>
-          <h1 className=''>Fullstack Developer</h1>
-          <p className='my-6'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt a
-            sit dolorum officiis itaque. Repellat ex dolore incidunt blanditiis
-            nostrum.
-          </p>
-          <Button>Let&apos;s Talk</Button>
+          {/* <Button>Let&apos;s Talk</Button>
 
-          {/* social media */}
           <section className={clsx('mt-8', 'flex items-center gap-10')}>
             <p>Social media</p>
             <div>
@@ -34,7 +36,7 @@ const HomeBannerSection = () => {
                 <RiTwitterLine className='text-2xl' />
               </a>
             </div>
-          </section>
+          </section> */}
         </article>
 
         {/* Right side */}

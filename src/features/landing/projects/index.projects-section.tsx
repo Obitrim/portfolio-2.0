@@ -12,16 +12,16 @@ const ProjectsSection = () => {
   return (
     <section className='v-whitespace bg-darker'>
       <AppContainer>
-        <section className='text-center'>
+        <section className='mb-5 text-center'>
           <h3 className='text-3xl'>
             Recent <span className='text-primary'>Projects</span>
           </h3>
-          <p className={clsx('mx-auto max-w-lg px-4', 'my-4 text-gray-300')}>
+          {/* <p className={clsx('mx-auto max-w-lg px-4', 'my-4 text-gray-300')}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
             provident neque blanditiis? Quidem quibusdam qui doloribus fugiat
             suscipit placeat, soluta tenetur dignissimos illum porro at veniam
             molestiae
-          </p>
+          </p> */}
         </section>
       </AppContainer>
       <Swiper

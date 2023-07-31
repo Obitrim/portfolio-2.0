@@ -4,10 +4,8 @@ import Layout from '@/components/v1/layout/Layout';
 import Seo from '@/components/v1/Seo';
 
 import HomeBannerSection from '@/features/landing/banner/index.banner';
-import BlogsSection from '@/features/landing/blogs/index.blogs-section';
-import ProjectsSection from '@/features/landing/projects/index.projects-section';
+import ProjectsSection from '@/features/landing/projects/v2.projects-section';
 import TechnologiesSection from '@/features/landing/technologies/index.technologies';
-import TestimonialsSection from '@/features/landing/testimonials/index.testimonials';
 
 export default function HomePage() {
   return (
@@ -16,10 +14,13 @@ export default function HomePage() {
 
       <main>
         <HomeBannerSection />
-        <ProjectsSection />
+        {/* <ProjectsSection /> */}
+        <div className='p-wavy-pattern'>
+          <ProjectsSection />
+          {/* <TestimonialsSection /> */}
+          {/* <BlogsSection /> */}
+        </div>
         <TechnologiesSection />
-        <TestimonialsSection />
-        <BlogsSection />
       </main>
     </Layout>
   );

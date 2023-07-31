@@ -6,7 +6,7 @@ import AppContainer from '@/components/v1/hoc/container/index.container';
 
 const TestimonialsSection = () => {
   return (
-    <section className='v-whitespace'>
+    <section className='v-whitespace relative z-30'>
       <AppContainer>
         <p className='text-light-primary'>Testimonials</p>
         <strong className={clsx('text-3xl')}>What clients say</strong>
