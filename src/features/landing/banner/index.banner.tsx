@@ -4,7 +4,7 @@ import AppContainer from '@/components/v1/hoc/container/index.container';
 
 const HomeBannerSection = () => {
   return (
-    <section className='v-whitespace bg-darker text-gray-300 md:h-screen'>
+    <section className='v-whitespace bg-darker  h-screen text-gray-300'>
       <AppContainer className='grid h-full -translate-y-10 content-center md:grid-cols-2'>
         {/* Left side */}
         <article>

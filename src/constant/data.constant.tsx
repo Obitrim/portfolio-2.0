@@ -1,3 +1,5 @@
+import { ImGit, ImGithub } from 'react-icons/im';
+
 export const TECHNOLOGIES_AND_TOOLS = [
   {
     url: 'https://firebase.google.com/',
@@ -5,7 +7,13 @@ export const TECHNOLOGIES_AND_TOOLS = [
   },
   {
     url: 'https://git-scm.com/',
-    logo: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg',
+    // logo: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg',
+    logo: <ImGit className='h-14 w-14' />,
+  },
+  {
+    url: 'https://github.com/',
+    // logo: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg',
+    logo: <ImGithub className='h-14 w-14' />,
   },
   {
     url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',

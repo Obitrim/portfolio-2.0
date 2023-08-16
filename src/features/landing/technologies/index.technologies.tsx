@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import Image from 'next/image';
 import React from 'react';
 
 import AppContainer from '@/components/v1/hoc/container/index.container';
@@ -13,7 +14,8 @@ const TechnologiesSection = () => {
           <span className='text-light-primary'>Technologies</span> / Tools
         </p>
         <strong className={clsx('text-3xl')}>What I use</strong>
-        <div className={clsx('grid grid-cols-4 gap-10', 'mt-10')}>
+
+        <div className={clsx('flex flex-wrap gap-10', 'mt-10')}>
           {TECHNOLOGIES_AND_TOOLS.map((tool, idx) => (
             <a
               key={tool.url + idx}
@@ -21,14 +23,24 @@ const TechnologiesSection = () => {
               target='_blank'
               rel='noreferrer'
               className={clsx(
-                'block rounded bg-dark px-6 py-10',
+                'block w-[185px] rounded bg-dark px-6 py-10',
                 'flex justify-center',
                 'border border-gray-900 hover:border-gray-700',
-                'transition-all duration-150'
+                'group transition-all duration-150'
               )}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={tool.logo} alt='' width='60' height='60' />
+              {typeof tool.logo == 'string' ? (
+                <Image
+                  height={60}
+                  width={60}
+                  src={tool.logo}
+                  alt=''
+                  className='h-[60px] w-auto grayscale invert transition-all duration-300 ease-in-out group-hover:grayscale-0 group-hover:invert-0'
+                />
+              ) : (
+                tool.logo
+              )}
             </a>
           ))}
         </div>
