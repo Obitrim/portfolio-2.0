@@ -23,6 +23,10 @@ export const TECHNOLOGIES_AND_TOOLS = [
     url: 'https://www.w3.org/html/',
     logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
   },
+  // {
+  //   url: 'https://tailwindui.com/',
+  //   logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
+  // },
   {
     url: 'https://www.mongodb.com/',
     logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg',
@@ -43,23 +47,51 @@ export const TECHNOLOGIES_AND_TOOLS = [
 
 export const PROJECTS = [
   {
-    image: '/images/projects/flinchub.png',
-    url: 'https://dashboard.nzvc.co.nz/',
+    name: 'NZ Companies',
+    description:
+      'A platform for querying and analyzing the data of private New Zealand companies and shareholders',
+    image: '/images/projects/nz-companies.png',
+    url: 'https://staging-nzcompanies.netlify.app/',
+    stack: ['NextJs', 'Firebase', 'Tailwind CSS', 'Typescript', 'React-Query'],
   },
   {
-    image: '/images/projects/lwm.png',
+    name: 'Magic Mynt',
+    image: '/images/projects/magic-mint.png',
     url: 'https://magicmynt.com/',
+    description:
+      'A No-Code Tool For Creating, Launching, And Managing NFT Collections',
+    stack: [
+      'Next.js',
+      'Firebase',
+      'Tailwind CSS',
+      'Typescript',
+      'Moralis',
+      'Web3',
+      'Ether.js',
+      'Hardhat',
+    ],
   },
   {
-    image: '/images/projects/flinchub.png',
-    url: 'https://dashboard.learnwithmochi.com/',
-  },
-  {
-    image: '/images/projects/lwm.png',
-    url: 'https://learnwithmochi.com/',
-  },
-  {
+    name: 'Flinc Hub',
+    description: 'A website for a software development startup',
     image: '/images/projects/flinchub.png',
     url: 'https://flinchub.com/',
+    stack: ['Next.js', 'Firebase', 'Tailwind CSS', 'Typescript'],
+  },
+  {
+    name: 'Learn with Mochi',
+    description:
+      'Learn With Mochi - A Programming Kit For Children With A Hands-On Coding Experience And Universe Of Fun Storybooks.',
+    image: '/images/projects/lwm.png',
+    url: 'https://learnwithmochi.com/',
+    stack: [
+      'Next.js',
+      'Firebase',
+      'Tailwind CSS',
+      'Typescript',
+      'Framer Motion',
+      'AWS',
+      'Stripe',
+    ],
   },
 ];

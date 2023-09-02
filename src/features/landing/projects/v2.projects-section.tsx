@@ -4,6 +4,8 @@ import React from 'react';
 import ProjectCard from '@/components/v1/cards/project.card';
 import AppContainer from '@/components/v1/hoc/container/index.container';
 
+import { PROJECTS } from '@/constant/data.constant';
+
 const ProjectsSection = () => {
   return (
     <section className='v-whitespace relative z-30'>
@@ -14,12 +16,17 @@ const ProjectsSection = () => {
         <div
           className={clsx('grid gap-8 sm:grid-cols-2 md:grid-cols-3', 'my-8')}
         >
-          <ProjectCard className='bg-darker rounded' />
-          <ProjectCard className='bg-darker rounded' />
-          <ProjectCard className='bg-darker rounded' />
-          <ProjectCard className='bg-darker rounded' />
-          <ProjectCard className='bg-darker rounded' />
-          <ProjectCard className='bg-darker rounded' />
+          {PROJECTS.map((project) => (
+            <ProjectCard
+              className='bg-darker rounded'
+              name={project.name}
+              image={project.image}
+              description={project.description as string}
+              stack={project.stack}
+              url={project.url}
+              key={project.url}
+            />
+          ))}
         </div>
       </AppContainer>
     </section>

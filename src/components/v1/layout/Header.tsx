@@ -7,8 +7,8 @@ import UnstyledLink from '@/components/v1/links/UnstyledLink';
 
 const links = [
   { href: '/', label: 'Projects' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/resume', label: 'Resume' },
+  // { href: '/blog', label: 'Blog' },
+  // { href: '/resume', label: 'Resume' },
 ];
 
 export default function Header() {
@@ -22,7 +22,7 @@ export default function Header() {
           href='/'
           className='font-grotest font-bold hover:text-gray-300'
         >
-          🖥️ Xcoda.me
+          😎 xcoda.me
         </UnstyledLink>
         <nav>
           <ul className='flex items-center justify-between space-x-8'>
