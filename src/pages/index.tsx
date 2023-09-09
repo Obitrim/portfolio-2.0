@@ -10,7 +10,7 @@ import TechnologiesSection from '@/features/landing/technologies/index.technolog
 export default function HomePage() {
   return (
     <Layout>
-      <Seo title='Portfolio | Me' />
+      <Seo title='Paul | Me' image='' />
 
       <main>
         <HomeBannerSection />

@@ -1,5 +1,10 @@
 import { ImGit, ImGithub } from 'react-icons/im';
 
+import flinchub from '../assets/images/projects/flinchub.png';
+import lwm from '../assets/images/projects/lwm.png';
+import magicMint from '../assets/images/projects/magic-mint.png';
+import nzCompanies from '../assets/images/projects/nz-companies.png';
+
 export const TECHNOLOGIES_AND_TOOLS = [
   {
     url: 'https://firebase.google.com/',
@@ -50,13 +55,13 @@ export const PROJECTS = [
     name: 'NZ Companies',
     description:
       'A platform for querying and analyzing the data of private New Zealand companies and shareholders',
-    image: '/images/projects/nz-companies.png',
+    image: nzCompanies,
     url: 'https://staging-nzcompanies.netlify.app/',
     stack: ['NextJs', 'Firebase', 'Tailwind CSS', 'Typescript', 'React-Query'],
   },
   {
     name: 'Magic Mynt',
-    image: '/images/projects/magic-mint.png',
+    image: magicMint,
     url: 'https://magicmynt.com/',
     description:
       'A No-Code Tool For Creating, Launching, And Managing NFT Collections',
@@ -75,7 +80,7 @@ export const PROJECTS = [
     name: 'Learn with Mochi',
     description:
       'Learn With Mochi - A Programming Kit For Children With A Hands-On Coding Experience And Universe Of Fun Storybooks.',
-    image: '/images/projects/lwm.png',
+    image: lwm,
     url: 'https://learnwithmochi.com/',
     stack: [
       'Next.js',
@@ -90,7 +95,7 @@ export const PROJECTS = [
   {
     name: 'Flinc Hub',
     description: 'A website for a software development startup',
-    image: '/images/projects/flinchub.png',
+    image: flinchub,
     url: 'https://flinchub.com/',
     stack: ['Next.js', 'Firebase', 'Tailwind CSS', 'Typescript'],
   },
