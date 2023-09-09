@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import React, { ComponentPropsWithoutRef, useRef } from 'react';
 
 import BaseCard from './index.base-card';
@@ -10,7 +10,7 @@ interface CardProps extends ComponentPropsWithoutRef<'div'> {
   description: string;
   stack: string[];
   url: string;
-  image: string;
+  image: string | StaticImageData;
 }
 
 const ProjectCard = ({
