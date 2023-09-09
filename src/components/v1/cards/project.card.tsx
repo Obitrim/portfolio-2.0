@@ -57,7 +57,7 @@ const ProjectCard = ({
           <p className='text-medium mt-2 mb-4 text-gray-400'>{description}</p>
           <div className='flex flex-wrap items-center gap-3 text-xs text-gray-400'>
             {stack.map((technology, index) => (
-              <span key={index + technology}>{technology}</span>
+              <span key={index + technology}>#{technology}</span>
             ))}
           </div>
         </div>

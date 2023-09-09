@@ -72,13 +72,6 @@ export const PROJECTS = [
     ],
   },
   {
-    name: 'Flinc Hub',
-    description: 'A website for a software development startup',
-    image: '/images/projects/flinchub.png',
-    url: 'https://flinchub.com/',
-    stack: ['Next.js', 'Firebase', 'Tailwind CSS', 'Typescript'],
-  },
-  {
     name: 'Learn with Mochi',
     description:
       'Learn With Mochi - A Programming Kit For Children With A Hands-On Coding Experience And Universe Of Fun Storybooks.',
@@ -93,5 +86,12 @@ export const PROJECTS = [
       'AWS',
       'Stripe',
     ],
+  },
+  {
+    name: 'Flinc Hub',
+    description: 'A website for a software development startup',
+    image: '/images/projects/flinchub.png',
+    url: 'https://flinchub.com/',
+    stack: ['Next.js', 'Firebase', 'Tailwind CSS', 'Typescript'],
   },
 ];
