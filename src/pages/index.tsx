@@ -12,7 +12,7 @@ export default function HomePage() {
     <Layout>
       <Seo title='Paul | Me' image='' />
 
-      <main>
+      <main className='w-screen overflow-x-hidden'>
         <HomeBannerSection />
         {/* <ProjectsSection /> */}
         <div className='p-wavy-pattern'>
