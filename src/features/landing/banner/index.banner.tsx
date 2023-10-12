@@ -19,7 +19,7 @@ const defaultOptions = {
 const HomeBannerSection = () => {
   return (
     <section className='v-whitespace bg-darker  h-screen text-gray-300'>
-      <AppContainer className='grid h-full -translate-y-10 content-center overflow-x-hidden md:grid-cols-2'>
+      <AppContainer className='grid h-full -translate-y-10 content-center md:grid-cols-2'>
         {/* Left side */}
         <article className='flex max-w-sm flex-col justify-center '>
           <div className=''>
@@ -78,8 +78,8 @@ const HomeBannerSection = () => {
         </article>
 
         {/* Right side */}
-        <div className='pointer-events-none md:scale-150'>
-          <Lottie options={defaultOptions} height={500} width={500} />
+        <div className='pointer-events-none md:scale-[2]'>
+          <Lottie options={defaultOptions} height={400} width={300} />
         </div>
       </AppContainer>
     </section>

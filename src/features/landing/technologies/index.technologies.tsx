@@ -15,7 +15,12 @@ const TechnologiesSection = () => {
         </p>
         <strong className={clsx('text-3xl')}>What I use</strong>
 
-        <div className={clsx('flex flex-wrap gap-10', 'mt-10')}>
+        <div
+          className={clsx(
+            'grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6',
+            'mt-10'
+          )}
+        >
           {TECHNOLOGIES_AND_TOOLS.map((tool, idx) => (
             <a
               key={tool.url + idx}
@@ -23,7 +28,7 @@ const TechnologiesSection = () => {
               target='_blank'
               rel='noreferrer'
               className={clsx(
-                'block w-[185px] rounded bg-dark px-6 py-10',
+                'block  rounded bg-dark px-6 py-10',
                 'flex justify-center',
                 'border border-gray-900 hover:border-gray-700',
                 'group transition-all duration-150'

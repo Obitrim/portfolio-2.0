@@ -7,7 +7,7 @@ import AppContainer from '@/components/v1/hoc/container/index.container';
 const AppFooter = () => {
   return (
     <footer>
-      <AppContainer className='flex items-center justify-between py-10 text-gray-400'>
+      <AppContainer className='flex flex-col items-center justify-between gap-2 py-10 text-gray-400 sm:flex-row'>
         {/* <strong className='text-2xl font-semibold'>Portfolio</strong> */}
         <a
           href='mailto:paulobitrim@gmail.com'
@@ -17,7 +17,7 @@ const AppFooter = () => {
           paulobitrim@gmail.com
         </a>
         <span>&copy;{new Date().getFullYear()}</span>
-        <div className='flex items-center gap-x-4'>
+        <div className='flex items-center gap-x-4 '>
           <a
             className='transition-all duration-300 ease-in-out hover:-rotate-[30deg] hover:text-white'
             href='https://www.linkedin.com/in/paul-obitrim-52304b169/'
