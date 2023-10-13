@@ -3,6 +3,7 @@ import { ImGit, ImGithub } from 'react-icons/im';
 import flinchub from '../assets/images/projects/flinchub.png';
 import lwm from '../assets/images/projects/lwm.png';
 import magicMint from '../assets/images/projects/magic-mint.png';
+import minft from '../assets/images/projects/minft.png';
 import nzCompanies from '../assets/images/projects/nz-companies.png';
 import spokVC from '../assets/images/projects/spok.png';
 
@@ -64,6 +65,21 @@ export const PROJECTS = [
       'Tailwind CSS',
       'Typescript',
       'Redux-Toolkit',
+    ],
+  },
+  {
+    name: 'MiNFT',
+    image: minft,
+    url: 'https://minft.me/',
+    description:
+      'MINFT - A Decentralized, Crowd-Sourced Platform For Tracking NFT Projects With Quantitative Metrics And Qualitative Descriptions From Holders.',
+    stack: [
+      'Next.js',
+      'Firebase',
+      'Tailwind CSS',
+      'Typescript',
+      'Moralis',
+      'Web3',
     ],
   },
   {
