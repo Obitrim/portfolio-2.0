@@ -18,7 +18,7 @@ const defaultOptions = {
 
 const HomeBannerSection = () => {
   return (
-    <section className='v-whitespace bg-darker  text-gray-300 md:h-screen'>
+    <section className='v-whitespace bg-darker text-gray-300 md:h-screen'>
       <AppContainer className='grid h-full -translate-y-10 content-center md:grid-cols-2'>
         {/* Left side */}
         <article className='flex max-w-sm flex-col justify-center '>

@@ -4,6 +4,7 @@ import flinchub from '../assets/images/projects/flinchub.png';
 import lwm from '../assets/images/projects/lwm.png';
 import magicMint from '../assets/images/projects/magic-mint.png';
 import nzCompanies from '../assets/images/projects/nz-companies.png';
+import spokVC from '../assets/images/projects/spok.png';
 
 export const TECHNOLOGIES_AND_TOOLS = [
   {
@@ -51,6 +52,20 @@ export const TECHNOLOGIES_AND_TOOLS = [
 ];
 
 export const PROJECTS = [
+  {
+    name: 'SpokVC',
+    image: spokVC,
+    url: 'https://spok.vc/',
+    description:
+      'An AI powered Venture Capital management system to help teams manage their funds and companies',
+    stack: [
+      'Next.js',
+      'Firebase',
+      'Tailwind CSS',
+      'Typescript',
+      'Redux-Toolkit',
+    ],
+  },
   {
     name: 'NZ Companies',
     description:
