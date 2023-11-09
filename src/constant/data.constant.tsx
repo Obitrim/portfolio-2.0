@@ -1,5 +1,9 @@
 import { ImGit, ImGithub } from 'react-icons/im';
 
+import b2d from '../assets/images/projects/b2d.png';
+import blogCards from '../assets/images/projects/blog-cards.png';
+import cssArt from '../assets/images/projects/css-art.png';
+import datePicker from '../assets/images/projects/date-picker.png';
 import flinchub from '../assets/images/projects/flinchub.png';
 import lwm from '../assets/images/projects/lwm.png';
 import magicMint from '../assets/images/projects/magic-mint.png';
@@ -128,6 +132,58 @@ export const PROJECTS = [
     description: 'A website for a software development startup',
     image: flinchub,
     url: 'https://flinchub.com/',
-    stack: ['Next.js', 'Firebase', 'Tailwind CSS', 'Typescript'],
+    stack: ['React.js', 'HTML & CSS', 'Tailwind CSS', 'Typescript'],
+  },
+  {
+    name: 'CSS Art',
+    description:
+      'HTML & CSS only Arts and designs built without the use of images, canvas or JS',
+    image: cssArt,
+    url: 'https://obitrim.github.io/Ssart/',
+    stack: ['HTML & CSS'],
+  },
+  {
+    name: 'Side Projects',
+    description: 'Web applications and websites I built for practice',
+    image: flinchub,
+    isHyperlink: false,
+    url: '/side-projects',
+    stack: ['Next.js', 'ReactJs', 'VueJS', 'HTML & CSS', 'Typescript', 'JS'],
+  },
+  {
+    name: 'Mini Projects',
+    description: 'Components and page sections built from ground-up',
+    image: flinchub,
+    isHyperlink: false,
+    url: '/mini-projects',
+    stack: ['Next.js', 'HTML & CSS', 'Typescript', 'JS'],
+  },
+];
+
+export const MINI_PROJECTS = [
+  {
+    name: 'Responsive Blog cards',
+    description: 'UI challenge',
+    image: blogCards,
+    url: 'https://obitrim.github.io/blog-cards/',
+    stack: ['HTML', 'CSS'],
+  },
+  {
+    name: 'Date picker',
+    description: 'UI Component',
+    image: datePicker,
+    url: 'https://obitrim.github.io/calendar/',
+    stack: ['HTML', 'CSS', 'JS'],
+  },
+];
+
+export const SIDE_PROJECTS = [
+  {
+    name: 'Binary - Decimal converter',
+    description:
+      'An application that converts decimal numbers to binary numbers and vice-versa',
+    image: b2d,
+    url: 'https://obitrim.github.io/Binary-Decimal-Converter/',
+    stack: ['HTML', 'CSS', 'JS'],
   },
 ];
