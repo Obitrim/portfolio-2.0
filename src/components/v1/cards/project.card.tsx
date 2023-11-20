@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import Image, { StaticImageData } from 'next/image';
+import { useRouter } from 'next/router';
 import React, { ComponentPropsWithoutRef, useRef } from 'react';
 
 import BaseCard from './index.base-card';
@@ -9,6 +10,7 @@ interface CardProps extends ComponentPropsWithoutRef<'div'> {
   name: string;
   description: string;
   stack: string[];
+  isHyperlink?: boolean;
   url: string;
   image: string | StaticImageData;
 }
@@ -19,12 +21,18 @@ const ProjectCard = ({
   description,
   stack,
   url,
+  isHyperlink = true,
   image,
   ...props
 }: CardProps) => {
+  const router = useRouter();
   const anchorRef = useRef<HTMLAnchorElement>(null);
 
   function viewProject() {
+    if (!isHyperlink) {
+      router.push(url);
+      return;
+    }
     anchorRef.current?.click();
   }
 
