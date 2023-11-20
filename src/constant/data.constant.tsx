@@ -1,4 +1,5 @@
 import { ImGit, ImGithub } from 'react-icons/im';
+import { Project } from 'types/projects';
 
 import b2d from '../assets/images/projects/b2d.png';
 import blogCards from '../assets/images/projects/blog-cards.png';
@@ -56,7 +57,35 @@ export const TECHNOLOGIES_AND_TOOLS = [
   },
 ];
 
-export const PROJECTS = [
+export const MINI_PROJECTS: Project[] = [
+  {
+    name: 'Responsive Blog cards',
+    description: 'UI challenge',
+    image: blogCards,
+    url: 'https://obitrim.github.io/blog-cards/',
+    stack: ['HTML', 'CSS'],
+  },
+  {
+    name: 'Date picker',
+    description: 'UI Component',
+    image: datePicker,
+    url: 'https://obitrim.github.io/calendar/',
+    stack: ['HTML', 'CSS', 'JS'],
+  },
+];
+
+export const SIDE_PROJECTS: Project[] = [
+  {
+    name: 'Binary - Decimal converter',
+    description:
+      'An application that converts decimal numbers to binary numbers and vice-versa',
+    image: b2d,
+    url: 'https://obitrim.github.io/Binary-Decimal-Converter/',
+    stack: ['HTML', 'CSS', 'JS'],
+  },
+];
+
+export const PROJECTS: Project[] = [
   {
     name: 'SpokVC',
     image: spokVC,
@@ -142,48 +171,22 @@ export const PROJECTS = [
     url: 'https://obitrim.github.io/Ssart/',
     stack: ['HTML & CSS'],
   },
-  {
-    name: 'Side Projects',
-    description: 'Web applications and websites I built for practice',
-    image: flinchub,
-    isHyperlink: false,
-    url: '/side-projects',
-    stack: ['Next.js', 'ReactJs', 'VueJS', 'HTML & CSS', 'Typescript', 'JS'],
-  },
-  {
-    name: 'Mini Projects',
-    description: 'Components and page sections built from ground-up',
-    image: flinchub,
-    isHyperlink: false,
-    url: '/mini-projects',
-    stack: ['Next.js', 'HTML & CSS', 'Typescript', 'JS'],
-  },
-];
-
-export const MINI_PROJECTS = [
-  {
-    name: 'Responsive Blog cards',
-    description: 'UI challenge',
-    image: blogCards,
-    url: 'https://obitrim.github.io/blog-cards/',
-    stack: ['HTML', 'CSS'],
-  },
-  {
-    name: 'Date picker',
-    description: 'UI Component',
-    image: datePicker,
-    url: 'https://obitrim.github.io/calendar/',
-    stack: ['HTML', 'CSS', 'JS'],
-  },
-];
-
-export const SIDE_PROJECTS = [
-  {
-    name: 'Binary - Decimal converter',
-    description:
-      'An application that converts decimal numbers to binary numbers and vice-versa',
-    image: b2d,
-    url: 'https://obitrim.github.io/Binary-Decimal-Converter/',
-    stack: ['HTML', 'CSS', 'JS'],
-  },
+  ...SIDE_PROJECTS,
+  ...MINI_PROJECTS,
+  // {
+  //   name: 'Side Projects',
+  //   description: 'Web applications and websites I built for practice',
+  //   image: flinchub,
+  //   isHyperlink: false,
+  //   url: '/side-projects',
+  //   stack: ['Next.js', 'ReactJs', 'VueJS', 'HTML & CSS', 'Typescript', 'JS'],
+  // },
+  // {
+  //   name: 'Mini Projects',
+  //   description: 'Components and page sections built from ground-up',
+  //   image: flinchub,
+  //   isHyperlink: false,
+  //   url: '/mini-projects',
+  //   stack: ['Next.js', 'HTML & CSS', 'Typescript', 'JS'],
+  // },
 ];

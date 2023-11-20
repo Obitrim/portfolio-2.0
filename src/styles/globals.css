@@ -204,6 +204,31 @@ body {
   background-color: var(--dark);
 }
 
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #1d976c 0%,
+    #93f9b9 51%,
+    #1d976c 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  /* text-transform: uppercase; */
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  /* color: #fff; */
+  text-decoration: none;
+}
+
 .v-whitespace {
   @apply py-16;
 }

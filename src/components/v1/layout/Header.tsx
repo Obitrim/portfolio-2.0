@@ -6,7 +6,7 @@ import AppContainer from '@/components/v1/hoc/container/index.container';
 import UnstyledLink from '@/components/v1/links/UnstyledLink';
 
 const links = [
-  { href: '/', label: 'Projects' },
+  { href: '/projects', label: 'Projects' },
   // { href: '/blog', label: 'Blog' },
   // { href: '/resume', label: 'Resume' },
 ];
