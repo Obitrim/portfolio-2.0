@@ -9,7 +9,7 @@ import ProjectsSection from '@/features/landing/projects/v2.projects-section';
 const AllProjects = () => {
   return (
     <Layout>
-      <Seo title='Side projects' image='' />
+      <Seo title='Projects' image='' />
 
       <main className='p-wavy-pattern'>
         <ProjectsSection projects={PROJECTS} />
