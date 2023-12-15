@@ -11,49 +11,75 @@ import magicMint from '../assets/images/projects/magic-mint.png';
 import minft from '../assets/images/projects/minft.png';
 import nzCompanies from '../assets/images/projects/nz-companies.png';
 import spokVC from '../assets/images/projects/spok.png';
+import teamwell from '../assets/images/projects/tw2.png';
 
 export const TECHNOLOGIES_AND_TOOLS = [
   {
-    url: 'https://firebase.google.com/',
-    logo: 'https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg',
-  },
-  {
+    name: 'Git',
     url: 'https://git-scm.com/',
     // logo: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg',
     logo: <ImGit className='h-14 w-14' />,
   },
   {
+    name: 'Github',
     url: 'https://github.com/',
     // logo: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg',
     logo: <ImGithub className='h-14 w-14' />,
   },
   {
+    name: 'Javascript',
     url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
     logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
   },
-  {
-    url: 'https://www.w3.org/html/',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
-  },
+
   // {
   //   url: 'https://tailwindui.com/',
   //   logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
   // },
   {
+    name: 'MongoDB',
     url: 'https://www.mongodb.com/',
     logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg',
   },
   {
+    name: 'NextJS',
     url: 'https://nextjs.org/',
     logo: 'https://cdn.worldvectorlogo.com/logos/nextjs-2.svg',
   },
   {
+    name: 'NodeJS',
     url: 'https://nodejs.org',
     logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg',
   },
   {
+    name: 'ReduxJS',
     url: 'https://redux.js.org',
     logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg',
+  },
+  {
+    name: 'ReactJS',
+    url: 'https://react.dev/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg',
+  },
+  {
+    name: 'VueJS',
+    url: 'https://vuejs.org/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg',
+  },
+  {
+    name: 'TailwindCSS',
+    url: 'https://tailwindcss.com/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg',
+  },
+  {
+    name: 'html',
+    url: 'https://www.w3.org/html/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
+  },
+  {
+    name: 'Firebase',
+    url: 'https://firebase.google.com/',
+    logo: 'https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg',
   },
 ];
 
@@ -113,6 +139,21 @@ export const PROJECTS: Project[] = [
       'Typescript',
       'Moralis',
       'Web3',
+    ],
+  },
+  {
+    name: 'HR Management System',
+    image: teamwell,
+    url: 'http://www.teamwell.co',
+    description:
+      'An HR management system  for easy personnel, leaves, agenda, vehicle and posts management in a company.',
+    stack: [
+      'VueJS',
+      'Directus',
+      'Tailwind CSS',
+      'Typescript',
+      'Pinia',
+      'Vue-query',
     ],
   },
   {
