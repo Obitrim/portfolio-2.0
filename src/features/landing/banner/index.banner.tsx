@@ -33,8 +33,10 @@ const HomeBannerSection = () => {
               <span className='text-primary font-semibold'>reliable</span> and{' '}
               <span className='text-primary font-semibold'>scalable</span> web
               applications as a{' '}
-              <span className='text-primary'>fullstack developer</span> that
-              make a difference.
+              <span className='text-primary font-semibold'>
+                fullstack developer
+              </span>{' '}
+              that make a difference.
             </p>
 
             <div className='mt-4 flex items-center gap-x-4'>
