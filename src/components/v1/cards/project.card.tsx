@@ -2,12 +2,7 @@ import { Dialog, Transition } from '@headlessui/react';
 import clsx from 'clsx';
 import Image, { StaticImageData } from 'next/image';
 import { useRouter } from 'next/router';
-import React, {
-  ComponentPropsWithoutRef,
-  Fragment,
-  useRef,
-  useState,
-} from 'react';
+import { ComponentPropsWithoutRef, Fragment, useRef, useState } from 'react';
 
 import BaseCard from './index.base-card';
 
@@ -75,7 +70,7 @@ const ProjectCard = ({
                 leaveFrom='opacity-100 scale-100'
                 leaveTo='opacity-0 scale-95'
               >
-                <Dialog.Panel className='w-screen max-w-7xl  transform  text-left align-middle shadow-xl transition-all'>
+                <Dialog.Panel className='min-h-[637px] w-screen max-w-7xl transform  bg-black  text-left align-middle shadow-xl transition-all'>
                   <Image
                     src={image}
                     className='h-auto w-full'
