@@ -1,18 +1,7 @@
 import { ImGit, ImGithub } from 'react-icons/im';
 import { Project } from 'types/projects';
 
-import b2d from '../assets/images/projects/b2d.png';
-import blogCards from '../assets/images/projects/blog-cards.png';
-import cssArt from '../assets/images/projects/css-art.png';
-import datePicker from '../assets/images/projects/date-picker.png';
-import expressionz from '../assets/images/projects/expressionz.png';
-import lwm from '../assets/images/projects/lwm.png';
-import minft from '../assets/images/projects/minft.png';
-import nzCompanies from '../assets/images/projects/nz-companies.png';
-import spokVC from '../assets/images/projects/spok.png';
-import talkstackAI from '../assets/images/projects/talkstack.png';
-import teamwell from '../assets/images/projects/tw2.png';
-import yourLife from '../assets/images/projects/yourlife.png';
+// All images now use public/images/projects/ directly as string paths
 
 export const TECHNOLOGIES_AND_TOOLS = [
   {
@@ -32,7 +21,6 @@ export const TECHNOLOGIES_AND_TOOLS = [
     url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
     logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
   },
-
   // {
   //   url: 'https://tailwindui.com/',
   //   logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
@@ -88,14 +76,14 @@ export const MINI_PROJECTS: Project[] = [
   {
     name: 'Responsive Blog cards',
     description: 'UI challenge',
-    image: blogCards,
+    image: '/images/projects/blog-cards.png',
     url: 'https://obitrim.github.io/blog-cards/',
     stack: ['HTML', 'CSS'],
   },
   {
     name: 'Date picker',
     description: 'UI Component',
-    image: datePicker,
+    image: '/images/projects/date-picker.png',
     url: 'https://obitrim.github.io/calendar/',
     stack: ['HTML', 'CSS', 'JS'],
   },
@@ -106,7 +94,7 @@ export const SIDE_PROJECTS: Project[] = [
     name: 'Binary - Decimal converter',
     description:
       'An application that converts decimal numbers to binary numbers and vice-versa',
-    image: b2d,
+    image: '/images/projects/b2d.png',
     url: 'https://obitrim.github.io/Binary-Decimal-Converter/',
     stack: ['HTML', 'CSS', 'JS'],
   },
@@ -115,7 +103,7 @@ export const SIDE_PROJECTS: Project[] = [
 export const PROJECTS: Project[] = [
   {
     name: 'TalkstackAI',
-    image: talkstackAI,
+    image: '/images/talkstack.png',
     url: 'https://www.talkstack.ai/',
     description:
       'AI voice platform for automating customer communication and support.',
@@ -134,7 +122,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'SpokVC',
-    image: spokVC,
+    image: '/images/projects/spok.png',
     url: 'https://spok.vc/',
     description:
       'AI-driven Venture Capital management system for tracking funds and companies.',
@@ -148,7 +136,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'MiNFT',
-    image: minft,
+    image: '/images/projects/minft.png',
     url: 'https://minft.me/',
     description:
       'Decentralized, crowd-sourced platform for tracking NFT projects and metrics.',
@@ -163,7 +151,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'HR Management System',
-    image: teamwell,
+    image: '/images/projects/tw2.png',
     url: 'http://www.teamwell.co',
     description:
       'App for managing personnel, leaves, agenda, vehicles, and posts.',
@@ -180,7 +168,7 @@ export const PROJECTS: Project[] = [
     name: 'YourLife',
     description:
       'Fundraising platform with digital cards and programs for teams and schools.',
-    image: yourLife,
+    image: '/images/projects/yourlife.png',
     url: 'https://yourlife.io/',
     stack: [
       'NextJs',
@@ -194,7 +182,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'Expressionz',
     description: 'Create custom emojis from NFTs for messaging apps.',
-    image: expressionz,
+    image: '/images/projects/expressionz.png',
     url: 'https://expressionz.xyz/',
     stack: [
       'NextJs',
@@ -209,7 +197,7 @@ export const PROJECTS: Project[] = [
     name: 'NZ Companies',
     description:
       'Platform for querying and analyzing private NZ companies and shareholders.',
-    image: nzCompanies,
+    image: '/images/projects/nz-companies.png',
     url: 'https://staging-nzcompanies.netlify.app/',
     stack: ['NextJs', 'Firebase', 'Tailwind CSS', 'Typescript', 'React-Query'],
   },
@@ -234,7 +222,7 @@ export const PROJECTS: Project[] = [
     name: 'Learn with Mochi',
     description:
       'Coding kit and storybooks for teaching children programming concepts.',
-    image: lwm,
+    image: '/images/projects/lwm.png',
     url: 'https://learnwithmochi.com/',
     stack: [
       'Next.js',
@@ -256,7 +244,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'CSS Art',
     description: 'Art and designs using only HTML & CSS, without images or JS.',
-    image: cssArt,
+    image: '/images/projects/css-art.png',
     url: 'https://obitrim.github.io/Ssart/',
     stack: ['HTML & CSS'],
   },
