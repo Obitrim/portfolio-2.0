@@ -5,13 +5,14 @@ import b2d from '../assets/images/projects/b2d.png';
 import blogCards from '../assets/images/projects/blog-cards.png';
 import cssArt from '../assets/images/projects/css-art.png';
 import datePicker from '../assets/images/projects/date-picker.png';
-import flinchub from '../assets/images/projects/flinchub.png';
+import expressionz from '../assets/images/projects/expressionz.png';
 import lwm from '../assets/images/projects/lwm.png';
-import magicMint from '../assets/images/projects/magic-mint.png';
 import minft from '../assets/images/projects/minft.png';
 import nzCompanies from '../assets/images/projects/nz-companies.png';
 import spokVC from '../assets/images/projects/spok.png';
+import talkstackAI from '../assets/images/projects/talkstack.png';
 import teamwell from '../assets/images/projects/tw2.png';
+import yourLife from '../assets/images/projects/yourlife.png';
 
 export const TECHNOLOGIES_AND_TOOLS = [
   {
@@ -113,11 +114,30 @@ export const SIDE_PROJECTS: Project[] = [
 
 export const PROJECTS: Project[] = [
   {
+    name: 'TalkstackAI',
+    image: talkstackAI,
+    url: 'https://www.talkstack.ai/',
+    description:
+      'AI voice platform for automating customer communication and support.',
+    stack: [
+      'Next.js',
+      'Firebase',
+      'Tailwind CSS',
+      'Typescript',
+      'Redux-Toolkit',
+      'Framer Motion',
+      'NodeJs',
+      'Retell',
+      'Twilio',
+      'AWS',
+    ],
+  },
+  {
     name: 'SpokVC',
     image: spokVC,
     url: 'https://spok.vc/',
     description:
-      'An AI powered Venture Capital management system to help teams manage their funds and companies',
+      'AI-driven Venture Capital management system for tracking funds and companies.',
     stack: [
       'Next.js',
       'Firebase',
@@ -131,7 +151,7 @@ export const PROJECTS: Project[] = [
     image: minft,
     url: 'https://minft.me/',
     description:
-      'MINFT - A Decentralized, Crowd-Sourced Platform For Tracking NFT Projects With Quantitative Metrics And Qualitative Descriptions From Holders.',
+      'Decentralized, crowd-sourced platform for tracking NFT projects and metrics.',
     stack: [
       'Next.js',
       'Firebase',
@@ -146,7 +166,7 @@ export const PROJECTS: Project[] = [
     image: teamwell,
     url: 'http://www.teamwell.co',
     description:
-      'An HR management system  for easy personnel, leaves, agenda, vehicle and posts management in a company.',
+      'App for managing personnel, leaves, agenda, vehicles, and posts.',
     stack: [
       'VueJS',
       'Directus',
@@ -157,34 +177,63 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
+    name: 'YourLife',
+    description:
+      'Fundraising platform with digital cards and programs for teams and schools.',
+    image: yourLife,
+    url: 'https://yourlife.io/',
+    stack: [
+      'NextJs',
+      'Firebase',
+      'Tailwind CSS',
+      'Typescript',
+      'NodeJs',
+      'Stripe',
+    ],
+  },
+  {
+    name: 'Expressionz',
+    description: 'Create custom emojis from NFTs for messaging apps.',
+    image: expressionz,
+    url: 'https://expressionz.xyz/',
+    stack: [
+      'NextJs',
+      'Firebase',
+      'Tailwind CSS',
+      'Typescript',
+      'NodeJs',
+      'Framer Motion',
+    ],
+  },
+  {
     name: 'NZ Companies',
     description:
-      'A platform for querying and analyzing the data of private New Zealand companies and shareholders',
+      'Platform for querying and analyzing private NZ companies and shareholders.',
     image: nzCompanies,
     url: 'https://staging-nzcompanies.netlify.app/',
     stack: ['NextJs', 'Firebase', 'Tailwind CSS', 'Typescript', 'React-Query'],
   },
-  {
-    name: 'Magic Mynt',
-    image: magicMint,
-    url: 'https://magicmynt.com/',
-    description:
-      'A No-Code Tool For Creating, Launching, And Managing NFT Collections',
-    stack: [
-      'Next.js',
-      'Firebase',
-      'Tailwind CSS',
-      'Typescript',
-      'Moralis',
-      'Web3',
-      'Ether.js',
-      'Hardhat',
-    ],
-  },
+  // {
+  //   name: 'Magic Mynt',
+  //   image: magicMint,
+  //   url: 'https://magicmynt.com/',
+  //   description:
+  //     'A No-Code Tool For Creating, Launching, And Managing NFT Collections',
+  //   stack: [
+  //     'Next.js',
+  //     'Firebase',
+  //     'Tailwind CSS',
+  //     'Typescript',
+  //     'Moralis',
+  //     'Web3',
+  //     'Ether.js',
+  //     'Hardhat',
+  //   ],
+  // },
   {
     name: 'Learn with Mochi',
     description:
-      'Learn With Mochi - A Programming Kit For Children With A Hands-On Coding Experience And Universe Of Fun Storybooks.',
+      'Coding kit and storybooks for teaching children programming concepts.',
     image: lwm,
     url: 'https://learnwithmochi.com/',
     stack: [
@@ -197,17 +246,16 @@ export const PROJECTS: Project[] = [
       'Stripe',
     ],
   },
-  {
-    name: 'Flinc Hub',
-    description: 'A website for a software development startup',
-    image: flinchub,
-    url: 'https://flinchub.com/',
-    stack: ['React.js', 'HTML & CSS', 'Tailwind CSS', 'Typescript'],
-  },
+  // {
+  //   name: 'Flinc Hub',
+  //   description: 'A website for a software development startup',
+  //   image: flinchub,
+  //   url: 'https://flinchub.com/',
+  //   stack: ['React.js', 'HTML & CSS', 'Tailwind CSS', 'Typescript'],
+  // },
   {
     name: 'CSS Art',
-    description:
-      'HTML & CSS only Arts and designs built without the use of images, canvas or JS',
+    description: 'Art and designs using only HTML & CSS, without images or JS.',
     image: cssArt,
     url: 'https://obitrim.github.io/Ssart/',
     stack: ['HTML & CSS'],

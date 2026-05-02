@@ -1,20 +1,13 @@
+import dynamic from 'next/dynamic';
 import React from 'react';
 import { HiPhone } from 'react-icons/hi';
 import { ImLinkedin, ImTwitter } from 'react-icons/im';
-import Lottie from 'react-lottie';
 
 import AppContainer from '@/components/v1/hoc/container/index.container';
 
 import * as animationData from '../../../assets/json/programming.json';
 
-const defaultOptions = {
-  loop: true,
-  autoplay: true,
-  animationData: animationData,
-  rendererSettings: {
-    preserveAspectRatio: 'xMidYMid slice',
-  },
-};
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 const HomeBannerSection = () => {
   return (
@@ -81,7 +74,12 @@ const HomeBannerSection = () => {
 
         {/* Right side */}
         <div className='pointer-events-none md:scale-[2]'>
-          <Lottie options={defaultOptions} height={400} width={300} />
+          <Lottie
+            animationData={animationData}
+            loop
+            autoplay
+            style={{ height: 400, width: 300 }}
+          />
         </div>
       </AppContainer>
     </section>
