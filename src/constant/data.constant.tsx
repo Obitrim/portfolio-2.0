@@ -103,7 +103,7 @@ export const SIDE_PROJECTS: Project[] = [
 export const PROJECTS: Project[] = [
   {
     name: 'TalkstackAI',
-    image: '/images/talkstack.png',
+    image: '/images/projects/talkstack.png',
     url: 'https://www.talkstack.ai/',
     description:
       'AI voice platform for automating customer communication and support.',
