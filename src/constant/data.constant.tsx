@@ -193,13 +193,22 @@ export const PROJECTS: Project[] = [
       'Framer Motion',
     ],
   },
+
   {
-    name: 'NZ Companies',
+    name: 'Learn with Mochi',
     description:
-      'Platform for querying and analyzing private NZ companies and shareholders.',
-    image: '/images/projects/nz-companies.png',
-    url: 'https://staging-nzcompanies.netlify.app/',
-    stack: ['NextJs', 'Firebase', 'Tailwind CSS', 'Typescript', 'React-Query'],
+      'Coding kit and storybooks for teaching children programming concepts.',
+    image: '/images/projects/lwm.png',
+    url: 'https://learnwithmochi.com/',
+    stack: [
+      'Next.js',
+      'Firebase',
+      'Tailwind CSS',
+      'Typescript',
+      'Framer Motion',
+      'AWS',
+      'Stripe',
+    ],
   },
   // {
   //   name: 'Magic Mynt',
@@ -219,28 +228,22 @@ export const PROJECTS: Project[] = [
   //   ],
   // },
   {
-    name: 'Learn with Mochi',
-    description:
-      'Coding kit and storybooks for teaching children programming concepts.',
-    image: '/images/projects/lwm.png',
-    url: 'https://learnwithmochi.com/',
-    stack: [
-      'Next.js',
-      'Firebase',
-      'Tailwind CSS',
-      'Typescript',
-      'Framer Motion',
-      'AWS',
-      'Stripe',
-    ],
+    name: 'Flinc Hub',
+    description: 'A website for a software development startup',
+    image: '/images/projects/flinchub.png',
+    url: 'https://flinchub-2df6e.web.app',
+    stack: ['React.js', 'HTML & CSS', 'Tailwind CSS', 'Typescript'],
   },
-  // {
-  //   name: 'Flinc Hub',
-  //   description: 'A website for a software development startup',
-  //   image: flinchub,
-  //   url: 'https://flinchub.com/',
-  //   stack: ['React.js', 'HTML & CSS', 'Tailwind CSS', 'Typescript'],
-  // },
+
+  {
+    name: 'NZ Companies',
+    description:
+      'Platform for querying and analyzing private NZ companies and shareholders.',
+    image: '/images/projects/nz-companies.png',
+    url: 'https://staging-nzcompanies.netlify.app/',
+    stack: ['NextJs', 'Firebase', 'Tailwind CSS', 'Typescript', 'React-Query'],
+  },
+
   {
     name: 'CSS Art',
     description: 'Art and designs using only HTML & CSS, without images or JS.',
