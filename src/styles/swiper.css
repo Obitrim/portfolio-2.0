@@ -24,3 +24,36 @@
     height: 25vw;
   }
 }
+
+.project-modal-swiper.swiper {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.project-modal-swiper .swiper-slide {
+  border-radius: 0;
+}
+
+.project-modal-swiper .swiper-button-next,
+.project-modal-swiper .swiper-button-prev {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+.project-modal-swiper .swiper-button-next::after,
+.project-modal-swiper .swiper-button-prev::after {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.project-modal-swiper .swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.5;
+}
+
+.project-modal-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+}

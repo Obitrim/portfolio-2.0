@@ -121,6 +121,42 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
+    name: 'BRC',
+    image: '/images/projects/brc/brc_dashboard.png',
+    images: [
+      '/images/projects/brc/brc_schedules.png',
+      '/images/projects/brc/brc_journal.png',
+    ],
+    url: 'https://brc101.com/',
+    description:
+      'Concierge management platform enabling managers to create buildings, departments, users, schedules, shift rules, and policies; supervisors to assign shifts and tasks, log packages, and review reports; and staff to clock in/out, complete checklists, and handle daily operations — all tailored to role-based workflows for field, managerial, and admin staff.',
+
+    stack: [
+      'ReactJs',
+      'Typescript',
+      'Tailwind CSS',
+      'Redux-Toolkit',
+      'React Query',
+      'Node.js',
+      'Express',
+      'Railway Cloud',
+      'PostgreSQL',
+    ],
+  },
+  {
+    name: 'LGCMV',
+    description:
+      'Website for the Ghanaian Community of Merrimack Valley focused on social assistance, emergency support, and celebrating Ghanaian heritage.',
+
+    image: '/images/projects/lgcmv/lgcmv_landing.png',
+    images: [
+      '/images/projects/lgcmv/lgcmv_about-us.png',
+      '/images/projects/lgcmv/lgcmv_our_story.png',
+    ],
+    url: 'https://www.lgcmv.org/',
+    stack: ['NextJs', 'Tailwindcss', 'GSAP', 'Typescript', 'JavaScript'],
+  },
+  {
     name: 'SpokVC',
     image: '/images/projects/spok.png',
     url: 'https://spok.vc/',
@@ -151,7 +187,12 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'HR Management System',
-    image: '/images/projects/tw2.png',
+    image: '/images/projects/teamwell/tw2.png',
+    images: [
+      '/images/projects/teamwell/tw1.png',
+      '/images/projects/teamwell/tw3.png',
+      '/images/projects/teamwell/tw4.png',
+    ],
     url: 'http://www.teamwell.co',
     description:
       'App for managing personnel, leaves, agenda, vehicles, and posts.',
@@ -251,6 +292,7 @@ export const PROJECTS: Project[] = [
     url: 'https://obitrim.github.io/Ssart/',
     stack: ['HTML & CSS'],
   },
+
   ...SIDE_PROJECTS,
   ...MINI_PROJECTS,
   // {

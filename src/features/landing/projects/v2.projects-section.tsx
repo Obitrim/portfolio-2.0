@@ -25,6 +25,7 @@ const ProjectsSection = ({ extraContent, projects }: ProjectsSectionProps) => {
               className='bg-darker rounded'
               name={project.name}
               image={project.image}
+              images={project.images}
               description={project.description as string}
               isHyperlink={project.isHyperlink}
               stack={project.stack}
