@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 480" fill="none">
+  <!-- Large background parallelogram -->
+  <polygon points="80,0 350,0 350,320 200,480 0,480 0,160" fill="#1565c0" opacity="0.12"/>
+
+  <!-- Main blue shapes -->
+  <polygon points="120,20 310,20 350,120 260,180 60,180 20,80" fill="#1565c0" opacity="0.85"/>
+  <polygon points="180,140 350,100 350,260 270,300 100,300 60,220" fill="#1976d2" opacity="0.75"/>
+  <polygon points="60,240 280,200 320,340 220,420 20,420 0,320" fill="#1565c0" opacity="0.65"/>
+
+  <!-- Overlapping accent shapes -->
+  <polygon points="200,0 350,0 350,80 280,120 130,120 80,40" fill="#2196f3" opacity="0.6"/>
+  <polygon points="240,60 350,30 350,160 300,200 160,200 110,100" fill="#42a5f5" opacity="0.4"/>
+
+  <!-- Small geometric accents -->
+  <polygon points="30,80 90,60 110,120 50,140" fill="#1565c0" opacity="0.9"/>
+  <polygon points="270,280 330,260 340,330 280,350" fill="#1976d2" opacity="0.8"/>
+  <polygon points="140,380 210,360 230,430 160,450" fill="#1565c0" opacity="0.7"/>
+
+  <!-- Orange drip marks -->
+  <!-- Drip 1 -->
+  <path d="M 160 180 Q 158 200 162 220 Q 163 240 160 260 Q 158 275 162 290 L 162 310 Q 164 320 160 330 Q 159 335 162 336 Q 166 337 164 332 Q 162 325 165 312 L 165 290 Q 168 274 164 260 Q 162 242 165 222 Q 168 202 165 182 Z" fill="#f07020" opacity="0.9"/>
+  <!-- Drip blob 1 -->
+  <ellipse cx="163" cy="340" rx="5" ry="7" fill="#f07020" opacity="0.9"/>
+
+  <!-- Drip 2 -->
+  <path d="M 240 120 Q 238 145 242 165 Q 244 185 240 210 L 240 235 Q 242 248 238 258 Q 237 264 241 265 Q 245 266 243 260 Q 240 252 243 240 L 243 212 Q 246 188 242 168 Q 240 146 243 120 Z" fill="#f07020" opacity="0.85"/>
+  <ellipse cx="241" cy="270" rx="5" ry="8" fill="#f07020" opacity="0.85"/>
+
+  <!-- Drip 3 - short -->
+  <path d="M 90 300 Q 88 315 92 328 L 92 342 Q 94 350 90 356 Q 89 360 93 361 Q 96 362 94 357 Q 91 350 94 342 L 94 326 Q 97 314 92 300 Z" fill="#f07020" opacity="0.8"/>
+  <ellipse cx="92" cy="365" rx="4" ry="6" fill="#f07020" opacity="0.8"/>
+
+  <!-- Drip 4 - top right area -->
+  <path d="M 310 80 Q 308 100 312 118 Q 314 135 310 152 L 310 168 Q 312 176 308 183 Q 307 187 311 188 Q 314 189 313 184 Q 310 177 313 169 L 313 150 Q 316 135 312 118 Q 310 100 313 80 Z" fill="#f07020" opacity="0.75"/>
+  <ellipse cx="311" cy="193" rx="4" ry="6" fill="#f07020" opacity="0.75"/>
+
+  <!-- Thin orange accent lines -->
+  <line x1="0" y1="160" x2="140" y2="60" stroke="#f07020" stroke-width="2" opacity="0.5"/>
+  <line x1="200" y1="480" x2="350" y2="320" stroke="#f07020" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Orange spray dots cluster top-right -->
+  <circle cx="330" cy="40" r="3" fill="#f07020" opacity="0.7"/>
+  <circle cx="340" cy="52" r="2" fill="#f07020" opacity="0.6"/>
+  <circle cx="322" cy="55" r="2.5" fill="#f07020" opacity="0.65"/>
+  <circle cx="344" cy="32" r="1.5" fill="#f07020" opacity="0.5"/>
+  <circle cx="335" cy="28" r="2" fill="#f07020" opacity="0.55"/>
+
+  <!-- Orange spray dots cluster mid -->
+  <circle cx="60" cy="380" r="2.5" fill="#f07020" opacity="0.6"/>
+  <circle cx="52" cy="392" r="2" fill="#f07020" opacity="0.5"/>
+  <circle cx="68" cy="395" r="1.5" fill="#f07020" opacity="0.45"/>
+</svg>

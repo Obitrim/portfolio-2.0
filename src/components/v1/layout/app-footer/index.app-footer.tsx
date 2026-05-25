@@ -1,45 +1,36 @@
 import React from 'react';
-import { HiPhone } from 'react-icons/hi';
-import { ImEnvelop, ImLinkedin, ImTwitter } from 'react-icons/im';
 
 import AppContainer from '@/components/v1/hoc/container/index.container';
 
 const AppFooter = () => {
   return (
-    <footer>
-      <AppContainer className='flex flex-col items-center justify-between gap-2 py-10 text-gray-400 sm:flex-row'>
-        {/* <strong className='text-2xl font-semibold'>Portfolio</strong> */}
-        <a
-          href='mailto:paulobitrim@gmail.com'
-          className='flex items-center gap-2 underline hover:text-white'
-        >
-          <ImEnvelop className='h-5 w-5' />
-          paulobitrim@gmail.com
-        </a>
-        <span>&copy;{new Date().getFullYear()}</span>
-        <div className='flex items-center gap-x-4 '>
-          <a
-            className='transition-all duration-300 ease-in-out hover:-rotate-[30deg] hover:text-white'
-            href='https://www.linkedin.com/in/paul-obitrim-52304b169/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <ImLinkedin className='h-6 w-6' />
-          </a>
-          <a
-            className='transition-all duration-300 ease-in-out hover:-rotate-[30deg] hover:text-white'
-            href='https://twitter.com/EvangelistPau10'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <ImTwitter className='h-7 w-7' />
-          </a>
-          <a
-            className='transition-all duration-300 ease-in-out hover:-rotate-[30deg] hover:text-white'
-            href='tel:+233544923771'
-          >
-            <HiPhone className='h-7 w-7' />
-          </a>
+    <footer
+      style={{
+        backgroundColor: '#f0f0f0',
+        borderTop: '1px solid #d8d8d8',
+      }}
+    >
+      <AppContainer className='py-6'>
+        <div className='flex flex-col items-center gap-4 text-center text-xs text-gray-500 sm:flex-row sm:justify-between sm:text-left'>
+          <span>
+            &copy; {new Date().getFullYear()} xcoda.me &mdash; All rights
+            reserved.
+          </span>
+          <span>Built with passion &amp; lots of ☕</span>
+          <div className='flex items-center gap-4'>
+            <a
+              href='#'
+              className='transition-colors hover:text-[var(--graffiti-blue)]'
+            >
+              Privacy Policy
+            </a>
+            <a
+              href='#'
+              className='transition-colors hover:text-[var(--graffiti-blue)]'
+            >
+              Terms of Use
+            </a>
+          </div>
         </div>
       </AppContainer>
     </footer>

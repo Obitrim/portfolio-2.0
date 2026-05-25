@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 220" fill="none">
+  <!-- Main white paint blob behind heading -->
+  <path d="M 20 60 C 0 40 5 70 8 100 C 5 130 0 155 18 170 C 8 195 20 218 50 215 C 42 220 60 218 75 210 Q 120 220 165 215 Q 220 220 280 218 Q 350 222 420 218 Q 480 220 530 215 Q 570 218 610 210 C 640 218 665 210 670 192 C 685 195 695 178 688 158 C 698 145 695 118 678 110 C 688 90 678 68 660 64 C 664 42 644 26 626 36 C 618 12 596 4 578 18 C 565 0 540 -2 526 16 C 508 -2 482 0 470 20 C 448 4 418 8 410 30 C 388 12 355 14 345 35 C 322 18 295 20 285 42 C 260 24 228 28 220 52 C 196 32 162 36 155 58 C 132 38 100 42 96 66 C 72 50 46 54 44 75 C 25 68 12 78 20 60 Z" fill="white" opacity="0.92"/>
+  <!-- Splatter drops -->
+  <ellipse cx="660" cy="30" rx="18" ry="12" transform="rotate(-15 660 30)" fill="white" opacity="0.85"/>
+  <ellipse cx="18" cy="195" rx="15" ry="9" transform="rotate(12 18 195)" fill="white" opacity="0.8"/>
+  <circle cx="690" cy="100" r="10" fill="white" opacity="0.75"/>
+  <circle cx="5" cy="105" r="8" fill="white" opacity="0.7"/>
+  <circle cx="350" cy="4" r="7" fill="white" opacity="0.65"/>
+  <!-- Small scattered drops -->
+  <circle cx="630" cy="12" r="6" fill="white" opacity="0.8"/>
+  <circle cx="680" cy="50" r="5" fill="white" opacity="0.7"/>
+  <circle cx="30" cy="165" r="5" fill="white" opacity="0.65"/>
+  <circle cx="45" cy="210" r="4" fill="white" opacity="0.6"/>
+  <circle cx="310" cy="2" r="5" fill="white" opacity="0.7"/>
+  <circle cx="390" cy="1" r="4" fill="white" opacity="0.65"/>
+</svg>

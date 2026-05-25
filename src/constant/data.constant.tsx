@@ -1,75 +1,170 @@
+import React from 'react';
 import { ImGit, ImGithub } from 'react-icons/im';
 import { Project } from 'types/projects';
 
-// All images now use public/images/projects/ directly as string paths
-
-export const TECHNOLOGIES_AND_TOOLS = [
+export const FEATURED_TECH = [
   {
-    name: 'Git',
-    url: 'https://git-scm.com/',
-    // logo: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg',
-    logo: <ImGit className='h-14 w-14' />,
+    name: 'React',
+    url: 'https://react.dev/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg',
   },
   {
-    name: 'Github',
-    url: 'https://github.com/',
-    // logo: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg',
-    logo: <ImGithub className='h-14 w-14' />,
-  },
-  {
-    name: 'Javascript',
-    url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
-  },
-  // {
-  //   url: 'https://tailwindui.com/',
-  //   logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
-  // },
-  {
-    name: 'MongoDB',
-    url: 'https://www.mongodb.com/',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg',
-  },
-  {
-    name: 'NextJS',
+    name: 'Next.js',
     url: 'https://nextjs.org/',
     logo: 'https://cdn.worldvectorlogo.com/logos/nextjs-2.svg',
   },
   {
-    name: 'NodeJS',
-    url: 'https://nodejs.org',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg',
+    name: 'TypeScript',
+    url: 'https://www.typescriptlang.org/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg',
   },
   {
-    name: 'ReduxJS',
-    url: 'https://redux.js.org',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg',
-  },
-  {
-    name: 'ReactJS',
-    url: 'https://react.dev/',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg',
-  },
-  {
-    name: 'VueJS',
+    name: 'Vue.js',
     url: 'https://vuejs.org/',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg',
+  },
+  {
+    name: 'Node.js',
+    url: 'https://nodejs.org',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg',
+  },
+  {
+    name: 'NestJS',
+    url: 'https://nestjs.com/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-original.svg',
   },
   {
     name: 'TailwindCSS',
     url: 'https://tailwindcss.com/',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg',
+    logo: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg',
   },
   {
-    name: 'html',
-    url: 'https://www.w3.org/html/',
-    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
+    name: 'PostgreSQL',
+    url: 'https://www.postgresql.org/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg',
   },
+  {
+    name: 'MongoDB',
+    url: 'https://www.mongodb.com/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg',
+  },
+  {
+    name: 'Supabase',
+    url: 'https://supabase.com/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/supabase/supabase-original.svg',
+  },
+];
+
+export type TechItem = {
+  name: string;
+  url: string;
+  logo: string | React.ReactNode;
+};
+
+export const TECHNOLOGIES_AND_TOOLS: TechItem[] = [
+  {
+    name: 'React.js',
+    url: 'https://react.dev/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg',
+  },
+  {
+    name: 'Next.js',
+    url: 'https://nextjs.org/',
+    logo: 'https://cdn.worldvectorlogo.com/logos/nextjs-2.svg',
+  },
+  {
+    name: 'Vue.js',
+    url: 'https://vuejs.org/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg',
+  },
+  {
+    name: 'TypeScript',
+    url: 'https://www.typescriptlang.org/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg',
+  },
+  {
+    name: 'JavaScript',
+    url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
+  },
+  {
+    name: 'TailwindCSS',
+    url: 'https://tailwindcss.com/',
+    logo: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg',
+  },
+  {
+    name: 'Redux Toolkit',
+    url: 'https://redux-toolkit.js.org/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg',
+  },
+  { name: 'Zustand', url: 'https://zustand-demo.pmnd.rs/', logo: null },
+  { name: 'React Query', url: 'https://tanstack.com/query', logo: null },
+  { name: 'Pinia', url: 'https://pinia.vuejs.org/', logo: null },
+  { name: 'Shadcn UI', url: 'https://ui.shadcn.com/', logo: null },
+  {
+    name: 'Node.js',
+    url: 'https://nodejs.org',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg',
+  },
+  {
+    name: 'Express.js',
+    url: 'https://expressjs.com/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg',
+  },
+  {
+    name: 'NestJS',
+    url: 'https://nestjs.com/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-original.svg',
+  },
+  { name: 'REST APIs', url: '#', logo: null },
   {
     name: 'Firebase',
     url: 'https://firebase.google.com/',
     logo: 'https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg',
   },
+  {
+    name: 'Supabase',
+    url: 'https://supabase.com/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/supabase/supabase-original.svg',
+  },
+  { name: 'WebSockets', url: '#', logo: null },
+  {
+    name: 'MongoDB',
+    url: 'https://www.mongodb.com/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg',
+  },
+  {
+    name: 'PostgreSQL',
+    url: 'https://www.postgresql.org/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg',
+  },
+  {
+    name: 'Firestore',
+    url: 'https://firebase.google.com/products/firestore',
+    logo: 'https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg',
+  },
+  {
+    name: 'Jest',
+    url: 'https://jestjs.io/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/jest/jest-plain.svg',
+  },
+  {
+    name: 'Cypress',
+    url: 'https://cypress.io/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/cypressio/cypressio-original.svg',
+  },
+  {
+    name: 'Git',
+    url: 'https://git-scm.com/',
+    logo: <ImGit className='h-8 w-8' />,
+  },
+  {
+    name: 'GitHub',
+    url: 'https://github.com/',
+    logo: <ImGithub className='h-8 w-8' />,
+  },
+  { name: 'Zod', url: 'https://zod.dev/', logo: null },
+  { name: 'Yup', url: 'https://github.com/jquense/yup', logo: null },
 ];
 
 export const MINI_PROJECTS: Project[] = [
