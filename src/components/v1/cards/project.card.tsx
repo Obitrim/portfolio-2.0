@@ -196,7 +196,7 @@ const ProjectCard = ({
 
       <BaseCard
         className={clsxm(
-          'graffiti-card flex h-full cursor-pointer flex-col p-0',
+          'graffiti-card flex h-full cursor-pointer flex-col !p-0',
           className
         )}
         style={{
