@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import clsxm from '@/lib/clsxm';
 import { useInView } from '@/hooks/useInView';
@@ -82,9 +82,9 @@ const HomeBannerSection = () => {
 
             <div className={clsxm(visible && 'animate-spray-in delay-150')}>
               <h1
-                className='graffiti-heading italic'
+                className='font-marker italic'
                 style={{
-                  fontSize: 'clamp(5.5rem, 14vw, 11rem)',
+                  fontSize: 'clamp(3.5rem, 7vw, 5.5rem)',
                   color: 'var(--graffiti-blue)',
                   lineHeight: 0.88,
                   textShadow: '4px 4px 0 rgba(21,101,192,0.25)',

@@ -64,7 +64,7 @@ const ProjectsSection = ({
                     FEATURED
                   </span>
                   <span
-                    className='graffiti-heading block'
+                    className='block font-marker'
                     style={{
                       fontSize: 'clamp(3rem, 7vw, 5.5rem)',
                       color: 'var(--graffiti-orange)',

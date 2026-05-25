@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 
 import clsxm from '@/lib/clsxm';
 import { useInView } from '@/hooks/useInView';
@@ -23,10 +23,10 @@ const TechStackSection = () => {
       <AppContainer>
         <div className='flex items-center justify-between gap-4'>
           <div className={clsxm(isInView && 'animate-spray-in')}>
-            <h2 className='graffiti-heading text-2xl text-white md:text-3xl'>
+            <h2 className='font-marker text-2xl text-white md:text-3xl'>
               MY{' '}
               <span
-                className='brush-underline'
+                className='brush-underline '
                 style={{ color: 'var(--graffiti-blue)' }}
               >
                 TECH STACK

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 
 import clsxm from '@/lib/clsxm';
 import { useInView } from '@/hooks/useInView';
@@ -106,7 +106,7 @@ const ResumePage = () => {
             <h1 className='graffiti-heading text-5xl md:text-7xl'>
               <span style={{ color: 'var(--ink)' }}>MY </span>
               <span
-                className='brush-underline'
+                className='brush-underline font-marker'
                 style={{ color: 'var(--graffiti-blue)' }}
               >
                 RESUME
