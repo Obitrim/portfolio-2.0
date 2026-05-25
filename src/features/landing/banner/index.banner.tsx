@@ -1,4 +1,3 @@
-import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
@@ -7,10 +6,6 @@ import clsxm from '@/lib/clsxm';
 import { useInView } from '@/hooks/useInView';
 
 import AppContainer from '@/components/v1/hoc/container/index.container';
-
-import * as animationData from '../../../assets/json/programming.json';
-
-const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 const HomeBannerSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -29,11 +24,11 @@ const HomeBannerSection = () => {
       ref={sectionRef}
       className='relative min-h-screen overflow-hidden'
       style={{
-        backgroundColor: '#1a1a1a',
+        backgroundColor: '#111111',
         backgroundImage: `
           url('/svg/concrete-bg.svg'),
-          radial-gradient(ellipse at 0% 100%, rgba(21,101,192,0.15) 0%, transparent 50%),
-          radial-gradient(ellipse at 100% 0%, rgba(240,112,32,0.12) 0%, transparent 45%)
+          radial-gradient(ellipse at 0% 100%, rgba(21,101,192,0.18) 0%, transparent 55%),
+          radial-gradient(ellipse at 100% 0%, rgba(240,112,32,0.14) 0%, transparent 50%)
         `,
         backgroundSize: 'cover, 100% 100%, 100% 100%',
         backgroundPosition: 'center, center, center',
@@ -42,17 +37,45 @@ const HomeBannerSection = () => {
     >
       <div
         className='pointer-events-none absolute inset-0'
-        style={{ backgroundColor: 'rgba(10,10,10,0.72)' }}
+        style={{ backgroundColor: 'rgba(10,10,10,0.6)' }}
       />
 
-      <Image
-        src='/svg/graffiti-corner.svg'
-        alt=''
-        width={480}
-        height={660}
-        className='pointer-events-none absolute right-0 top-0 w-64 opacity-40 md:w-80 lg:w-96'
-        priority
-      />
+      {/* Desktop profile image — spans full section height, right half */}
+      <div
+        className={clsxm(
+          'pointer-events-none absolute inset-y-0 right-0 z-10 hidden w-1/2 md:block',
+          visible && 'animate-spray-in delay-300'
+        )}
+      >
+        <Image
+          src='/graffiti-profile.png'
+          alt='Paul — Software Engineer'
+          fill
+          priority
+          sizes='50vw'
+          className='object-contain object-bottom drop-shadow-2xl'
+        />
+      </div>
+
+      {/* CODE. SOLVE. box — absolute top-right */}
+      <div
+        className={clsxm(
+          'absolute right-6 top-28 z-20 hidden px-4 py-2 md:block lg:right-12',
+          visible && 'delay-400 animate-spray-in'
+        )}
+        style={{
+          backgroundColor: 'rgba(0,0,0,0.8)',
+          border: '1px solid rgba(255,255,255,0.12)',
+          clipPath: 'polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%)',
+        }}
+      >
+        <p className='font-marker text-sm leading-snug text-white md:text-base'>
+          CODE. SOLVE.
+          <br />
+          CREATE.{' '}
+          <span style={{ color: 'var(--graffiti-orange)' }}>IMPACT.</span>
+        </p>
+      </div>
 
       <AppContainer className='relative z-10 flex min-h-screen items-center'>
         <div className='grid w-full grid-cols-1 gap-8 py-28 md:grid-cols-2 md:gap-6 md:py-0'>
@@ -214,95 +237,26 @@ const HomeBannerSection = () => {
                 Freelance &amp; Full-Time →
               </span>
             </div>
+
+            {/* Mobile profile image */}
+            <div
+              className={clsxm(
+                'mt-8 flex justify-center md:hidden',
+                visible && 'delay-400 animate-spray-in'
+              )}
+            >
+              <Image
+                src='/graffiti-profile.png'
+                alt='Paul — Software Engineer'
+                width={320}
+                height={390}
+                className='h-auto w-full max-w-[280px] object-contain object-bottom drop-shadow-2xl'
+              />
+            </div>
           </article>
 
-          <div
-            className={clsxm(
-              'relative flex flex-col items-center justify-center',
-              visible && 'animate-spray-in delay-300'
-            )}
-          >
-            <div
-              className='mb-4 w-full max-w-xs px-4 py-3 md:max-w-sm'
-              style={{
-                backgroundColor: 'rgba(0,0,0,0.7)',
-                border: '1px solid rgba(255,255,255,0.1)',
-                clipPath:
-                  'polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%)',
-              }}
-            >
-              <p className='text-center font-marker text-lg text-white'>
-                CODE. SOLVE. CREATE.{' '}
-                <span style={{ color: 'var(--graffiti-orange)' }}>IMPACT.</span>
-              </p>
-            </div>
-
-            <div className='relative w-full max-w-sm md:max-w-md'>
-              <div
-                className='absolute -left-3 -top-3 z-20 h-6 w-6'
-                style={{
-                  borderLeft: '2px solid var(--graffiti-blue)',
-                  borderTop: '2px solid var(--graffiti-blue)',
-                }}
-              />
-              <div
-                className='absolute -right-3 -top-3 z-20 h-6 w-6'
-                style={{
-                  borderRight: '2px solid var(--graffiti-orange)',
-                  borderTop: '2px solid var(--graffiti-orange)',
-                }}
-              />
-              <div
-                className='absolute -bottom-3 -left-3 z-20 h-6 w-6'
-                style={{
-                  borderLeft: '2px solid var(--graffiti-orange)',
-                  borderBottom: '2px solid var(--graffiti-orange)',
-                }}
-              />
-              <div
-                className='absolute -bottom-3 -right-3 z-20 h-6 w-6'
-                style={{
-                  borderRight: '2px solid var(--graffiti-blue)',
-                  borderBottom: '2px solid var(--graffiti-blue)',
-                }}
-              />
-
-              <div
-                className='overflow-hidden p-2'
-                style={{
-                  backgroundColor: 'rgba(20,20,20,0.85)',
-                  border: '1px solid rgba(255,255,255,0.08)',
-                }}
-              >
-                <div
-                  className='mb-2 flex items-center gap-1.5 px-2 py-1'
-                  style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}
-                >
-                  <div
-                    className='h-2 w-2 rounded-full'
-                    style={{ background: '#ff5f57' }}
-                  />
-                  <div
-                    className='h-2 w-2 rounded-full'
-                    style={{ background: '#ffbd2e' }}
-                  />
-                  <div
-                    className='h-2 w-2 rounded-full'
-                    style={{ background: '#28c840' }}
-                  />
-                  <span className='ml-2 text-xs tracking-wider text-gray-500'>
-                    coding.exe
-                  </span>
-                </div>
-                <Lottie
-                  animationData={animationData}
-                  loop
-                  autoplay
-                  style={{ height: 'auto', width: '100%' }}
-                />
-              </div>
-            </div>
-          </div>
+          {/* Empty right column — space reserved for absolute-positioned profile image */}
+          <div className='hidden md:block' />
         </div>
       </AppContainer>
 
