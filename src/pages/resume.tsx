@@ -9,58 +9,72 @@ import Seo from '@/components/v1/Seo';
 
 const experiences = [
   {
-    role: 'Fullstack Developer',
-    company: 'TalkstackAI',
-    period: '2023 — Present',
-    location: 'Remote, US',
-    points: [
-      'Built AI voice platform for automating customer communication using Retell and Twilio',
-      'Architected Next.js frontend with Redux Toolkit, Firebase auth, and Framer Motion',
-      'Engineered Node.js backend APIs and AWS infrastructure for scalable deployments',
-    ],
-    stack: ['Next.js', 'Node.js', 'Firebase', 'AWS', 'Twilio'],
-  },
-  {
     role: 'Frontend Developer',
-    company: 'SpokVC',
-    period: '2022 — 2023',
-    location: 'Remote, US',
-    points: [
-      'Built AI-driven VC management system for tracking funds and portfolio companies',
-      'Developed responsive dashboards with complex data tables and filtering systems',
-      'Integrated Firebase real-time database and Redux Toolkit state management',
-    ],
-    stack: [
-      'Next.js',
-      'TypeScript',
-      'Firebase',
-      'Redux-Toolkit',
-      'Tailwind CSS',
-    ],
-  },
-  {
-    role: 'Fullstack Developer',
-    company: 'BRC101',
-    period: '2022 — 2023',
-    location: 'Remote, US',
-    points: [
-      'Built concierge management platform with role-based workflows for field, managerial, and admin staff',
-      'Developed scheduling, shift rules, policy engines and real-time reporting modules',
-      'Designed PostgreSQL schema and Node.js/Express REST APIs with Railway Cloud deployment',
-    ],
-    stack: ['React', 'Node.js', 'PostgreSQL', 'Express', 'TypeScript'],
-  },
-  {
-    role: 'Frontend Developer',
-    company: 'Freelance / Contracts',
-    period: '2020 — 2022',
+    company: 'Teamco',
+    period: 'Apr 2023 — Dec 2023',
     location: 'Remote',
     points: [
-      'Delivered 10+ production web applications for US and Ghanaian clients',
-      'Shipped LGCMV.org (Ghanaian community), YourLife.io (fundraising), and NFT platforms',
-      'Focused on performance optimization, responsive design, and accessibility',
+      'Collaborated with engineers and designers to build interactive user interfaces for a Human Resource Management system.',
+      'Improved the performance of the User Interface by 20% by reducing the production bundle size through clean component architecture, composition and reusability, as well as reducing calls to endpoints through frontend caching.',
+      'Converted Figma designs into responsive, production-ready frontend applications using modern frontend technologies.',
+      'Worked closely with backend engineers to integrate APIs powered by Directus.',
+      'Fixed UX inconsistencies and contributed improvements that enhanced usability and user experience across the platform.',
     ],
-    stack: ['Next.js', 'React', 'Firebase', 'Tailwind CSS', 'TypeScript'],
+    stack: ['Vue.js', 'TypeScript', 'Tailwind CSS', 'Directus', 'Pinia'],
+  },
+  {
+    role: 'Software Developer',
+    company: 'Redberry',
+    period: 'Sep 2021 — Apr 2023',
+    location: 'Remote',
+    points: [
+      'Built and optimized data-intensive frontend modules used across internal enterprise platforms, improving rendering performance by 50% through efficient state handling and reduction of unnecessary re-renders.',
+      'Implemented infinite data fetching and caching strategies that improved responsiveness and reduced load times for large datasets.',
+      'Developed reusable UI components and frontend architecture patterns that improved consistency and accelerated feature delivery across projects.',
+      'Collaborated closely with backend engineers and system analysts to design scalable software solutions aligned with business and technical requirements.',
+      'Wrote end-to-end tests to improve reliability and reduce production regressions.',
+      'Mentored junior developers on clean architecture, maintainable code structure, debugging, and frontend best practices.',
+    ],
+    stack: ['React', 'TypeScript', 'Node.js', 'Tailwind CSS', 'Jest'],
+  },
+  {
+    role: 'Lead Software Developer',
+    company: 'Flinchub',
+    period: 'June 2022 — Apr 2023',
+    location: 'Remote',
+    points: [
+      'Led a team of developers through the planning, development, and deployment of web applications across multiple client projects.',
+      'Coordinated with product managers, designers, and engineers to translate business requirements into scalable technical solutions.',
+      'Spearheaded engineering decisions around frontend architecture, reusable component systems, and application scaling.',
+      'Facilitated technical brainstorming sessions, sprint planning, and development reviews to improve team collaboration and delivery efficiency together with stakeholders.',
+      'Contributed to both frontend and backend implementation, ensuring seamless integration between user interfaces and backend services.',
+    ],
+    stack: ['React', 'Next.js', 'Node.js', 'TypeScript', 'Firebase'],
+  },
+  {
+    role: 'Software Engineer',
+    company: 'Rhino Cocoa',
+    period: 'Oct 2021 — Dec 2022',
+    location: 'Remote',
+    points: [
+      'Participated in the development and maintenance of enterprise software solutions for internal operational systems.',
+      'Designed database schemas for a cocoa estate management platform used to track estate structures and operational records.',
+      'Investigated and resolved issues identified through testing and user feedback to improve system stability.',
+      'Evaluated and refactored codebases to improve maintainability, browser compatibility, and adherence to engineering standards.',
+      'Analyzed user requirements and translated them into technical implementation plans.',
+    ],
+    stack: ['JavaScript', 'PostgreSQL', 'Node.js', 'Express'],
+  },
+  {
+    role: 'Web Developer Intern',
+    company: 'Hannover TalkVal',
+    period: 'Dec 2020 — Jan 2021',
+    location: 'Remote',
+    points: [
+      'Designed and built User Interface for a pharmacy management system dashboard.',
+      'Wrote and edited webpage content and collaborated with team members in the building of the User Interface.',
+    ],
+    stack: ['HTML', 'CSS', 'JavaScript'],
   },
 ];
 
@@ -68,26 +82,39 @@ const skills = [
   {
     label: 'Frontend',
     items: [
-      'React',
+      'React.js',
       'Next.js',
+      'Vue.js',
       'TypeScript',
+      'JavaScript',
       'TailwindCSS',
-      'VueJS',
-      'Redux',
+      'Redux Toolkit',
+      'Zustand',
+      'React Query',
+      'Pinia',
+      'Shadcn UI',
       'Framer Motion',
     ],
   },
   {
     label: 'Backend',
-    items: ['Node.js', 'Express', 'REST APIs', 'GraphQL', 'Firebase', 'Prisma'],
+    items: [
+      'Node.js',
+      'Express.js',
+      'NestJS',
+      'REST APIs',
+      'Firebase',
+      'Supabase',
+      'WebSockets',
+    ],
   },
   {
     label: 'Database',
-    items: ['PostgreSQL', 'MongoDB', 'Firebase Firestore', 'Redis'],
+    items: ['PostgreSQL', 'MongoDB', 'Firebase Firestore'],
   },
   {
-    label: 'Cloud & Tools',
-    items: ['AWS', 'Railway', 'Vercel', 'Git', 'Docker', 'CI/CD'],
+    label: 'Testing & Tools',
+    items: ['Jest', 'Cypress', 'Zod', 'Yup', 'Git', 'GitHub'],
   },
 ];
 
@@ -145,86 +172,97 @@ const ResumePage = () => {
                   </h2>
                 </div>
 
-                <div className='relative pl-6 md:pl-8'>
-                  <div
-                    className='absolute left-0 top-0 h-full w-[2px]'
-                    style={{
-                      background:
-                        'linear-gradient(to bottom, var(--graffiti-blue), var(--graffiti-orange), transparent)',
-                    }}
-                  />
-
+                <div className='space-y-0'>
                   {experiences.map((exp, idx) => (
                     <div
                       key={exp.company}
                       className={clsxm(
-                        'relative mb-10 last:mb-0',
+                        'flex gap-5',
                         isInView && 'animate-slide-up'
                       )}
                       style={{ animationDelay: `${100 + idx * 100}ms` }}
                     >
-                      <div
-                        className='absolute -left-[29px] top-1 h-4 w-4'
-                        style={{
-                          background:
-                            idx === 0 ? 'var(--graffiti-blue)' : '#ffffff',
-                          border: '2px solid var(--graffiti-blue)',
-                        }}
-                      />
-
-                      <div className='flex flex-wrap items-start justify-between gap-2'>
-                        <div>
-                          <h3
-                            className='graffiti-heading text-xl md:text-2xl'
-                            style={{ color: 'var(--ink)' }}
-                          >
-                            {exp.role}
-                          </h3>
-                          <p
-                            className='mt-0.5 font-bold'
-                            style={{ color: 'var(--graffiti-blue)' }}
-                          >
-                            {exp.company}
-                          </p>
-                        </div>
-                        <div className='text-right'>
-                          <span
-                            className='text-sm font-semibold'
-                            style={{ color: 'var(--graffiti-orange)' }}
-                          >
-                            {exp.period}
-                          </span>
-                          <p className='text-xs text-gray-500'>
-                            {exp.location}
-                          </p>
-                        </div>
+                      {/* Timeline column */}
+                      <div className='flex flex-shrink-0 flex-col items-center'>
+                        <div
+                          className='z-10 mt-1.5 h-4 w-4 flex-shrink-0'
+                          style={{
+                            background:
+                              idx === 0 ? 'var(--graffiti-blue)' : '#ffffff',
+                            border: '2px solid var(--graffiti-blue)',
+                          }}
+                        />
+                        {idx < experiences.length - 1 && (
+                          <div
+                            className='mt-1 w-[2px] flex-1'
+                            style={{
+                              background:
+                                idx === 0
+                                  ? 'linear-gradient(to bottom, var(--graffiti-blue), var(--graffiti-blue) 60%, var(--graffiti-orange))'
+                                  : idx === experiences.length - 2
+                                  ? 'linear-gradient(to bottom, var(--graffiti-orange), transparent)'
+                                  : 'var(--graffiti-orange)',
+                            }}
+                          />
+                        )}
                       </div>
 
-                      <ul className='mt-3 space-y-1.5'>
-                        {exp.points.map((pt) => (
-                          <li
-                            key={pt}
-                            className='flex items-start gap-2 text-sm leading-relaxed text-gray-600'
-                          >
-                            <span
-                              style={{
-                                color: 'var(--graffiti-orange)',
-                                flexShrink: 0,
-                              }}
+                      {/* Content column */}
+                      <div className='flex-1 pb-10 last:pb-0'>
+                        <div className='flex flex-wrap items-start justify-between gap-2'>
+                          <div>
+                            <h3
+                              className='graffiti-heading text-xl md:text-2xl'
+                              style={{ color: 'var(--ink)' }}
                             >
-                              ▸
+                              {exp.role}
+                            </h3>
+                            <p
+                              className='mt-0.5 font-bold'
+                              style={{ color: 'var(--graffiti-blue)' }}
+                            >
+                              {exp.company}
+                            </p>
+                          </div>
+                          <div className='text-right'>
+                            <span
+                              className='text-sm font-semibold'
+                              style={{ color: 'var(--graffiti-orange)' }}
+                            >
+                              {exp.period}
                             </span>
-                            {pt}
-                          </li>
-                        ))}
-                      </ul>
+                            <p className='text-xs text-gray-500'>
+                              {exp.location}
+                            </p>
+                          </div>
+                        </div>
 
-                      <div className='mt-3 flex flex-wrap gap-2'>
-                        {exp.stack.map((s) => (
-                          <span key={s} className='stack-chip'>
-                            {s}
-                          </span>
-                        ))}
+                        <ul className='mt-3 space-y-1.5'>
+                          {exp.points.map((pt) => (
+                            <li
+                              key={pt}
+                              className='flex items-start gap-2 text-sm leading-relaxed text-gray-600'
+                            >
+                              <span
+                                style={{
+                                  color: 'var(--graffiti-orange)',
+                                  flexShrink: 0,
+                                }}
+                              >
+                                ▸
+                              </span>
+                              {pt}
+                            </li>
+                          ))}
+                        </ul>
+
+                        <div className='mt-3 flex flex-wrap gap-2'>
+                          {exp.stack.map((s) => (
+                            <span key={s} className='stack-chip'>
+                              {s}
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   ))}
