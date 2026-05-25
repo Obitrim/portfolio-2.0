@@ -26,7 +26,7 @@ const TechStackSection = () => {
             <h2 className='font-marker text-2xl text-white md:text-3xl'>
               MY{' '}
               <span
-                className='brush-underline '
+                className='brush-underline text-marker '
                 style={{ color: 'var(--graffiti-blue)' }}
               >
                 TECH STACK

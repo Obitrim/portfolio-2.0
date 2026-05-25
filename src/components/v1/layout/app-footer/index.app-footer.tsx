@@ -1,5 +1,3 @@
-import React from 'react';
-
 import AppContainer from '@/components/v1/hoc/container/index.container';
 
 const AppFooter = () => {
@@ -17,20 +15,6 @@ const AppFooter = () => {
             reserved.
           </span>
           <span>Built with passion &amp; lots of ☕</span>
-          <div className='flex items-center gap-4'>
-            <a
-              href='#'
-              className='transition-colors hover:text-[var(--graffiti-blue)]'
-            >
-              Privacy Policy
-            </a>
-            <a
-              href='#'
-              className='transition-colors hover:text-[var(--graffiti-blue)]'
-            >
-              Terms of Use
-            </a>
-          </div>
         </div>
       </AppContainer>
     </footer>

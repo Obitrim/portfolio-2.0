@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { HiMail, HiPhone } from 'react-icons/hi';
-import { ImGithub, ImLinkedin, ImTwitter } from 'react-icons/im';
+import { ImGithub, ImLinkedin } from 'react-icons/im';
 
 import clsxm from '@/lib/clsxm';
 import { useInView } from '@/hooks/useInView';
@@ -18,11 +18,11 @@ const socialLinks = [
     icon: <ImGithub className='h-5 w-5' />,
     label: 'Github',
   },
-  {
-    href: 'https://twitter.com/EvangelistPau10',
-    icon: <ImTwitter className='h-5 w-5' />,
-    label: 'Twitter',
-  },
+  // {
+  //   href: 'https://twitter.com/EvangelistPau10',
+  //   icon: <ImTwitter className='h-5 w-5' />,
+  //   label: 'Twitter',
+  // },
   {
     href: 'mailto:paulobitrim@gmail.com',
     icon: <HiMail className='h-5 w-5' />,

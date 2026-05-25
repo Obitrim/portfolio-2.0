@@ -10,7 +10,7 @@ import Seo from '@/components/v1/Seo';
 const experiences = [
   {
     role: 'Frontend Developer',
-    company: 'Teamco',
+    company: 'Teamwell',
     period: 'Apr 2023 — Dec 2023',
     location: 'Remote',
     points: [
@@ -24,7 +24,7 @@ const experiences = [
   },
   {
     role: 'Software Developer',
-    company: 'Redberry',
+    company: 'Sailboatlabs',
     period: 'Sep 2021 — Apr 2023',
     location: 'Remote',
     points: [
@@ -53,9 +53,9 @@ const experiences = [
   },
   {
     role: 'Software Engineer',
-    company: 'Rhino Cocoa',
+    company: 'Ghana Cocoa Board',
     period: 'Oct 2021 — Dec 2022',
-    location: 'Remote',
+    location: 'Accra/Ghana',
     points: [
       'Participated in the development and maintenance of enterprise software solutions for internal operational systems.',
       'Designed database schemas for a cocoa estate management platform used to track estate structures and operational records.',
@@ -63,11 +63,19 @@ const experiences = [
       'Evaluated and refactored codebases to improve maintainability, browser compatibility, and adherence to engineering standards.',
       'Analyzed user requirements and translated them into technical implementation plans.',
     ],
-    stack: ['JavaScript', 'PostgreSQL', 'Node.js', 'Express'],
+    stack: [
+      'JavaScript',
+      'PostgreSQL',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'ReactJs',
+      'TailwindCSS',
+    ],
   },
   {
     role: 'Web Developer Intern',
-    company: 'Hannover TalkVal',
+    company: 'Ravinlead Tech Hub',
     period: 'Dec 2020 — Jan 2021',
     location: 'Remote',
     points: [
@@ -140,9 +148,9 @@ const ResumePage = () => {
               </span>
             </h1>
             <p className='mt-4 max-w-lg text-sm leading-relaxed text-gray-600 md:text-base'>
-              Fullstack developer with 4+ years building scalable web
-              applications for startups and enterprises across the US, Ghana,
-              and beyond.
+              Fullstack developer with over half a decade years building
+              scalable web applications for startups and enterprises across
+              Ghana and beyond.
             </p>
             <div className='mt-6 flex flex-wrap gap-3'>
               <a href='/resume.pdf' download className='btn-primary'>
@@ -177,7 +185,7 @@ const ResumePage = () => {
                     <div
                       key={exp.company}
                       className={clsxm(
-                        'flex gap-5',
+                        'flex gap-5 ',
                         isInView && 'animate-slide-up'
                       )}
                       style={{ animationDelay: `${100 + idx * 100}ms` }}
@@ -256,7 +264,7 @@ const ResumePage = () => {
                           ))}
                         </ul>
 
-                        <div className='mt-3 flex flex-wrap gap-2'>
+                        <div className='mb-8 mt-3 flex flex-wrap gap-2'>
                           {exp.stack.map((s) => (
                             <span key={s} className='stack-chip'>
                               {s}
@@ -322,10 +330,10 @@ const ResumePage = () => {
                     className='mt-1 text-sm'
                     style={{ color: 'var(--graffiti-orange)' }}
                   >
-                    2018 — 2022
+                    2017 — 2021
                   </p>
                   <p className='mt-1 text-xs text-gray-400'>
-                    University of Ghana
+                    Kwame Nkrumah University of Science and Technology
                   </p>
                 </div>
 
@@ -353,7 +361,13 @@ const ResumePage = () => {
                       >
                         Email:{' '}
                       </span>
-                      paulobitrim@gmail.com
+                      <a
+                        href='mailto:paulobitrim@gmail.com'
+                        className='hover:underline'
+                        style={{ color: 'var(--graffiti-blue)' }}
+                      >
+                        paulobitrim@gmail.com
+                      </a>
                     </p>
                     <p>
                       <span
@@ -362,7 +376,15 @@ const ResumePage = () => {
                       >
                         GitHub:{' '}
                       </span>
-                      github.com/Obitrim
+                      <a
+                        href='https://github.com/Obitrim'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='hover:underline'
+                        style={{ color: 'var(--graffiti-blue)' }}
+                      >
+                        github.com/Obitrim
+                      </a>
                     </p>
                     <p>
                       <span
@@ -371,7 +393,7 @@ const ResumePage = () => {
                       >
                         Location:{' '}
                       </span>
-                      Remote / Worldwide
+                      Accra, Ghana.
                     </p>
                   </div>
                 </div>
