@@ -15,6 +15,8 @@
 # production
 /build
 
+/.playwright-mcp
+
 # misc
 .DS_Store
 *.pem
