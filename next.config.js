@@ -11,8 +11,8 @@ const nextConfig = {
     unoptimized: true,
   },
 
-  // SVGR
-  webpack(config) {
+  // SVGR + server-only package externals
+  webpack(config, { isServer }) {
     config.module.rules.push({
       test: /\.svg$/i,
       issuer: /\.[jt]sx?$/,
@@ -26,6 +26,10 @@ const nextConfig = {
         },
       ],
     });
+
+    if (isServer) {
+      config.externals.push('googleapis', 'google-auth-library');
+    }
 
     return config;
   },
