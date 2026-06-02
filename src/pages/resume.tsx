@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useRef } from 'react';
 
 import clsxm from '@/lib/clsxm';
@@ -135,11 +136,29 @@ const ResumePage = () => {
       <Seo title='Resume | Paul' />
 
       <main>
-        <section className='concrete-texture relative overflow-hidden py-20 md:py-28'>
+        <section
+          className='relative overflow-hidden py-20 md:py-28'
+          style={{
+            backgroundColor: '#111111',
+            backgroundImage: `
+              url('/svg/concrete-bg.svg'),
+              radial-gradient(ellipse at 0% 100%, rgba(21,101,192,0.18) 0%, transparent 55%),
+              radial-gradient(ellipse at 100% 0%, rgba(240,112,32,0.14) 0%, transparent 50%)
+            `,
+            backgroundSize: 'cover, 100% 100%, 100% 100%',
+            backgroundPosition: 'center, center, center',
+            backgroundBlendMode: 'overlay, normal, normal',
+          }}
+        >
+          <div
+            className='pointer-events-none absolute inset-0'
+            style={{ backgroundColor: 'rgba(10,10,10,0.55)' }}
+          />
+
           <AppContainer className='relative z-10'>
             <div className='spray-label mb-4'>Credentials</div>
             <h1 className='graffiti-heading text-5xl md:text-7xl'>
-              <span style={{ color: 'var(--ink)' }}>MY </span>
+              <span style={{ color: '#ffffff' }}>MY </span>
               <span
                 className='brush-underline font-marker'
                 style={{ color: 'var(--graffiti-blue)' }}
@@ -147,7 +166,7 @@ const ResumePage = () => {
                 RESUME
               </span>
             </h1>
-            <p className='mt-4 max-w-lg text-sm leading-relaxed text-gray-600 md:text-base'>
+            <p className='mt-4 max-w-lg text-sm leading-relaxed text-gray-400 md:text-base'>
               Fullstack developer with over half a decade years building
               scalable web applications for startups and enterprises across
               Ghana and beyond.
@@ -156,9 +175,9 @@ const ResumePage = () => {
               <a href='/resume.pdf' download className='btn-primary'>
                 DOWNLOAD PDF ↓
               </a>
-              <a href='mailto:paulobitrim@gmail.com' className='btn-outline'>
+              <Link href='/contact' className='btn-outline-white'>
                 HIRE ME →
-              </a>
+              </Link>
             </div>
           </AppContainer>
         </section>
@@ -166,14 +185,14 @@ const ResumePage = () => {
         <section
           ref={sectionRef}
           className='v-whitespace'
-          style={{ backgroundColor: '#ffffff' }}
+          style={{ backgroundColor: '#0a0a0a' }}
         >
           <AppContainer>
-            <div className='grid grid-cols-1 gap-16 md:grid-cols-3'>
+            <div className='grid grid-cols-1 gap-16 md:grid-cols-3 md:items-start'>
               <div className='md:col-span-2'>
                 <div className={clsxm('mb-10', isInView && 'animate-spray-in')}>
                   <h2 className='graffiti-heading text-3xl md:text-4xl'>
-                    <span style={{ color: 'var(--ink)' }}>WORK </span>
+                    <span style={{ color: '#ffffff' }}>WORK </span>
                     <span style={{ color: 'var(--graffiti-orange)' }}>
                       EXPERIENCE
                     </span>
@@ -185,18 +204,17 @@ const ResumePage = () => {
                     <div
                       key={exp.company}
                       className={clsxm(
-                        'flex gap-5 ',
+                        'flex gap-5',
                         isInView && 'animate-slide-up'
                       )}
                       style={{ animationDelay: `${100 + idx * 100}ms` }}
                     >
-                      {/* Timeline column */}
                       <div className='flex flex-shrink-0 flex-col items-center'>
                         <div
                           className='z-10 mt-1.5 h-4 w-4 flex-shrink-0'
                           style={{
                             background:
-                              idx === 0 ? 'var(--graffiti-blue)' : '#ffffff',
+                              idx === 0 ? 'var(--graffiti-blue)' : '#0a0a0a',
                             border: '2px solid var(--graffiti-blue)',
                           }}
                         />
@@ -215,13 +233,12 @@ const ResumePage = () => {
                         )}
                       </div>
 
-                      {/* Content column */}
                       <div className='flex-1 pb-10 last:pb-0'>
                         <div className='flex flex-wrap items-start justify-between gap-2'>
                           <div>
                             <h3
                               className='graffiti-heading text-xl md:text-2xl'
-                              style={{ color: 'var(--ink)' }}
+                              style={{ color: '#ffffff' }}
                             >
                               {exp.role}
                             </h3>
@@ -249,7 +266,7 @@ const ResumePage = () => {
                           {exp.points.map((pt) => (
                             <li
                               key={pt}
-                              className='flex items-start gap-2 text-sm leading-relaxed text-gray-600'
+                              className='flex items-start gap-2 text-sm leading-relaxed text-gray-400'
                             >
                               <span
                                 style={{
@@ -277,7 +294,7 @@ const ResumePage = () => {
                 </div>
               </div>
 
-              <div>
+              <div className='md:sticky md:top-24 md:self-start'>
                 <div
                   className={clsxm(
                     'mb-8',
@@ -285,7 +302,7 @@ const ResumePage = () => {
                   )}
                 >
                   <h2 className='graffiti-heading text-3xl md:text-4xl'>
-                    <span style={{ color: 'var(--ink)' }}>SKILL</span>
+                    <span style={{ color: '#ffffff' }}>SKILL</span>
                     <span style={{ color: 'var(--graffiti-blue)' }}>SET</span>
                   </h2>
                 </div>
@@ -320,7 +337,11 @@ const ResumePage = () => {
                     'mt-10 p-5',
                     isInView && 'delay-400 animate-slide-up'
                   )}
-                  style={{ backgroundColor: 'var(--ink)' }}
+                  style={{
+                    backgroundColor: 'var(--spray-elevated)',
+                    border: '1px solid var(--graffiti-blue)',
+                    borderLeftWidth: '3px',
+                  }}
                 >
                   <h4 className='graffiti-heading mb-2 text-xl text-white'>
                     EDUCATION
@@ -332,7 +353,7 @@ const ResumePage = () => {
                   >
                     2017 — 2021
                   </p>
-                  <p className='mt-1 text-xs text-gray-400'>
+                  <p className='mt-1 text-xs text-gray-500'>
                     Kwame Nkrumah University of Science and Technology
                   </p>
                 </div>
@@ -343,24 +364,19 @@ const ResumePage = () => {
                     isInView && 'animate-slide-up delay-500'
                   )}
                   style={{
-                    backgroundColor: '#f8f8f8',
-                    border: '1px solid #eeeeee',
+                    backgroundColor: 'var(--spray-card)',
+                    border: '1px solid var(--spray-border)',
                   }}
                 >
                   <h4
                     className='graffiti-heading mb-3 text-xl'
-                    style={{ color: 'var(--ink)' }}
+                    style={{ color: '#ffffff' }}
                   >
                     CONTACT
                   </h4>
-                  <div className='space-y-2 text-sm text-gray-600'>
+                  <div className='space-y-2 text-sm text-gray-400'>
                     <p>
-                      <span
-                        className='font-semibold'
-                        style={{ color: 'var(--ink)' }}
-                      >
-                        Email:{' '}
-                      </span>
+                      <span className='font-semibold text-white'>Email: </span>
                       <a
                         href='mailto:paulobitrim@gmail.com'
                         className='hover:underline'
@@ -370,12 +386,7 @@ const ResumePage = () => {
                       </a>
                     </p>
                     <p>
-                      <span
-                        className='font-semibold'
-                        style={{ color: 'var(--ink)' }}
-                      >
-                        GitHub:{' '}
-                      </span>
+                      <span className='font-semibold text-white'>GitHub: </span>
                       <a
                         href='https://github.com/Obitrim'
                         target='_blank'
@@ -387,10 +398,7 @@ const ResumePage = () => {
                       </a>
                     </p>
                     <p>
-                      <span
-                        className='font-semibold'
-                        style={{ color: 'var(--ink)' }}
-                      >
+                      <span className='font-semibold text-white'>
                         Location:{' '}
                       </span>
                       Accra, Ghana.

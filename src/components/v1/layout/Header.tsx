@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import * as React from 'react';
 
@@ -11,9 +12,9 @@ const links = [
   { href: '/', label: 'Home' },
   { href: '/#about', label: 'About' },
   { href: '/#skills', label: 'Skills' },
-  { href: '/#projects', label: 'Projects' },
-  // { href: '/blog', label: 'Blog' },
+  { href: '/projects', label: 'Projects' },
   { href: '/resume', label: 'Resume' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 export default function Header() {
@@ -72,8 +73,8 @@ export default function Header() {
           </ul>
         </nav>
 
-        <a
-          href='mailto:paulobitrim@gmail.com'
+        <Link
+          href='/contact'
           className='hidden sm:inline-flex'
           style={{
             display: 'inline-flex',
@@ -120,7 +121,7 @@ export default function Header() {
               d='M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z'
             />
           </svg>
-        </a>
+        </Link>
 
         <button
           onClick={() => setIsOpen((v) => !v)}
@@ -176,12 +177,9 @@ export default function Header() {
             </li>
           ))}
           <li className='px-6 py-3'>
-            <a
-              href='mailto:paulobitrim@gmail.com'
-              className='btn-primary text-xs'
-            >
+            <Link href='/contact' className='btn-primary text-xs'>
               LET&apos;S TALK →
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

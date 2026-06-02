@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 
 import clsxm from '@/lib/clsxm';
 import { useInView } from '@/hooks/useInView';
@@ -66,6 +66,26 @@ const traits = [
     ),
     title: 'Always Learning',
     description: 'I stay curious and keep up with the latest technologies.',
+  },
+  {
+    icon: (
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        className='h-6 w-6'
+        fill='none'
+        viewBox='0 0 24 24'
+        stroke='currentColor'
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap='round'
+          strokeLinejoin='round'
+          d='M12 11c1.104 0 2-.896 2-2s-.896-2-2-2-2 .896-2 2 .896 2 2 2zm6 8v-1a4 4 0 00-8 0v1M20 8v6a2 2 0 01-2 2h-1.28a4.006 4.006 0 00-7.44 0H6a2 2 0 01-2-2V8a2 2 0 012-2h12a2 2 0 012 2z'
+        />
+      </svg>
+    ),
+    title: 'Security Conscious',
+    description: 'I prioritize security best practices in every project.',
   },
 ];
 
@@ -165,7 +185,7 @@ const AboutSection = () => {
 
             <p className='mb-8 leading-relaxed text-gray-600'>
               I&apos;m Paul, a fullstack developer with a passion for building
-              intuitive, performant web applications. I specialize in the
+              intuitive, performant software solutions. I specialize in the
               JavaScript ecosystem — from pixel-perfect frontends with React and
               Next.js to robust backends powered by Node.js and PostgreSQL.
               I&apos;ve shipped production apps for startups and enterprises

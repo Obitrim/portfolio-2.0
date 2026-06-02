@@ -20,8 +20,10 @@
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "clsx": "^1.2.1",
+    "googleapis": "^173.0.0",
     "lottie-react": "^2.4.1",
     "next": "^13.1.6",
+    "nodemailer": "^8.0.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
@@ -35,6 +37,7 @@
     "@tailwindcss/forms": "^0.5.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
+    "@types/nodemailer": "^8.0.0",
     "@types/react": "^18.0.27",
     "@typescript-eslint/eslint-plugin": "^5.50.0",
     "@typescript-eslint/parser": "^5.50.0",

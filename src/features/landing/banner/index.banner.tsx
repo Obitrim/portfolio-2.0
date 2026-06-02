@@ -146,75 +146,50 @@ const HomeBannerSection = () => {
 
             <div
               className={clsxm(
-                'mt-8 flex flex-wrap items-center gap-4',
+                'mt-8 flex flex-row items-center gap-4',
                 visible && 'delay-400 animate-slide-up'
               )}
             >
               <a
                 href='#projects'
+                className={clsxm(
+                  'inline-flex items-center gap-2 whitespace-nowrap font-sans font-bold transition-colors duration-200 md:gap-2',
+                  'bg-white text-[var(--ink)]',
+                  'uppercase tracking-[0.1em]',
+                  'px-3 py-2 text-[0.76rem] md:px-5 md:py-3 md:text-[0.82rem]',
+                  'rounded-none',
+                  'hover:bg-[var(--graffiti-orange)] hover:text-white',
+                  'active:bg-[var(--graffiti-orange)] active:text-white',
+                  'focus:outline-none',
+                  'cursor-pointer',
+                  'select-none'
+                )}
                 style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '8px',
-                  padding: '12px 28px',
-                  backgroundColor: '#ffffff',
-                  color: 'var(--ink)',
-                  fontFamily: "'Space Grotesk', sans-serif",
-                  fontWeight: 700,
-                  fontSize: '0.82rem',
-                  letterSpacing: '0.1em',
-                  textTransform: 'uppercase',
                   clipPath:
                     'polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%)',
-                  transition: 'background-color 0.25s ease, color 0.25s ease',
-                  whiteSpace: 'nowrap',
-                }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLAnchorElement).style.backgroundColor =
-                    'var(--graffiti-orange)';
-                  (e.currentTarget as HTMLAnchorElement).style.color =
-                    '#ffffff';
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLAnchorElement).style.backgroundColor =
-                    '#ffffff';
-                  (e.currentTarget as HTMLAnchorElement).style.color =
-                    'var(--ink)';
+                  fontFamily: "'Space Grotesk', sans-serif",
                 }}
               >
                 VIEW MY WORK →
               </a>
               <Link
                 href='/resume'
+                className={clsxm(
+                  'inline-flex items-center gap-2 whitespace-nowrap font-sans font-bold transition-colors duration-200 md:gap-2',
+                  'border-2 border-white/50 bg-transparent text-white',
+                  'uppercase tracking-[0.1em]',
+                  'px-3 py-[6px] text-[0.76rem] md:px-5 md:py-[10px] md:text-[0.82rem]',
+                  'rounded-none',
+                  'hover:border-white hover:text-white',
+                  'active:border-white active:text-white',
+                  'focus:outline-none',
+                  'cursor-pointer',
+                  'select-none'
+                )}
                 style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '8px',
-                  padding: '10px 28px',
-                  backgroundColor: 'transparent',
-                  color: '#ffffff',
-                  border: '2px solid rgba(255,255,255,0.5)',
-                  fontFamily: "'Space Grotesk', sans-serif",
-                  fontWeight: 700,
-                  fontSize: '0.82rem',
-                  letterSpacing: '0.1em',
-                  textTransform: 'uppercase',
                   clipPath:
                     'polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%)',
-                  transition: 'border-color 0.25s ease, color 0.25s ease',
-                  whiteSpace: 'nowrap',
-                }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLAnchorElement).style.borderColor =
-                    '#ffffff';
-                  (e.currentTarget as HTMLAnchorElement).style.color =
-                    '#ffffff';
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLAnchorElement).style.borderColor =
-                    'rgba(255,255,255,0.5)';
-                  (e.currentTarget as HTMLAnchorElement).style.color =
-                    '#ffffff';
+                  fontFamily: "'Space Grotesk', sans-serif",
                 }}
               >
                 DOWNLOAD CV ↓
@@ -231,10 +206,10 @@ const HomeBannerSection = () => {
                 Available for
               </span>
               <span
-                className='font-marker text-base italic'
-                style={{ color: 'var(--graffiti-blue)' }}
+                className='xs:text-base font-marker text-sm italic'
+                style={{ color: 'var(--graffiti-blue)', fontSize: '0.82rem' }}
               >
-                Freelance &amp; Full-Time →
+                Freelance &amp; Remote &amp; Full-Time →
               </span>
             </div>
 
@@ -246,7 +221,7 @@ const HomeBannerSection = () => {
               )}
             >
               <Image
-                src='/graffiti-profile.png'
+                src='/me_with_laptop_teacup_and_graffiti_background.png'
                 alt='Paul — Software Engineer'
                 width={320}
                 height={390}

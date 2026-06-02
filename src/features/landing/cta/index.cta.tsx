@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useRef } from 'react';
 import { HiMail, HiPhone } from 'react-icons/hi';
 import { ImGithub, ImLinkedin } from 'react-icons/im';
@@ -69,8 +70,8 @@ const CTASection = () => {
               isInView && 'animate-slide-up delay-200'
             )}
           >
-            <a
-              href='mailto:paulobitrim@gmail.com'
+            <Link
+              href='/contact'
               className='inline-flex items-center gap-2 border-2 border-white px-8 py-4 text-sm font-bold uppercase tracking-widest text-white transition-all duration-200 hover:bg-white hover:text-[var(--ink)]'
               style={{
                 clipPath:
@@ -78,7 +79,7 @@ const CTASection = () => {
               }}
             >
               GET IN TOUCH →
-            </a>
+            </Link>
 
             <div className='flex items-center gap-3'>
               {socialLinks.map(({ href, icon, label }) => (

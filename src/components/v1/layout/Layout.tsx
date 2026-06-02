@@ -6,7 +6,7 @@ import Header from '@/components/v1/layout/Header';
 export default function Layout({ children }: { children: React.ReactNode }) {
   // Put Header or Footer Here
   return (
-    <div className='max-w-screen overflow-x-hidden'>
+    <div className='max-w-screen' style={{ overflowX: 'clip' }}>
       <Header />
       {children}
       <AppFooter />

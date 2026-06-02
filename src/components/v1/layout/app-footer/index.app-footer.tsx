@@ -4,12 +4,12 @@ const AppFooter = () => {
   return (
     <footer
       style={{
-        backgroundColor: '#f0f0f0',
-        borderTop: '1px solid #d8d8d8',
+        backgroundColor: 'var(--spray-black)',
+        borderTop: '1px solid var(--spray-border)',
       }}
     >
       <AppContainer className='py-6'>
-        <div className='flex flex-col items-center gap-4 text-center text-xs text-gray-500 sm:flex-row sm:justify-between sm:text-left'>
+        <div className='flex flex-col items-center gap-4 text-center text-xs text-gray-600 sm:flex-row sm:justify-between sm:text-left'>
           <span>
             &copy; {new Date().getFullYear()} xcoda.me &mdash; All rights
             reserved.

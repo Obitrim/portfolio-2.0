@@ -53,6 +53,89 @@ export const FEATURED_TECH = [
     url: 'https://supabase.com/',
     logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/supabase/supabase-original.svg',
   },
+
+  // Additional items from the provided list, not already included above
+
+  // Frontend
+  {
+    name: 'JavaScript',
+    url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
+  },
+  {
+    name: 'Redux Toolkit',
+    url: 'https://redux-toolkit.js.org/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg',
+  },
+  {
+    name: 'Zustand',
+    url: 'https://zustand-demo.pmnd.rs/',
+    logo: 'data:image/jpeg;base64,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',
+  },
+  {
+    name: 'React Query',
+    url: 'https://tanstack.com/query',
+    logo: 'https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/2/react-query-icon-xjukes5xosrrwg3y3ics1f.png/react-query-icon-2dw36yx2b016w37mbipyn.png?_a=DATAiZiuZAA0',
+  },
+  {
+    name: 'Pinia',
+    url: 'https://pinia.vuejs.org/',
+    logo: 'https://pinia.vuejs.org/logo.svg',
+  },
+  {
+    name: 'Shadcn UI',
+    url: 'https://ui.shadcn.com/',
+    logo: 'https://ui.shadcn.com/apple-touch-icon.png',
+  },
+
+  // Backend
+  {
+    name: 'Express.js',
+    url: 'https://expressjs.com/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg',
+  },
+  {
+    name: 'REST APIs',
+    url: 'https://restfulapi.net/',
+    logo: null,
+  },
+  {
+    name: 'Firebase',
+    url: 'https://firebase.google.com/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg',
+  },
+  {
+    name: 'Web Sockets',
+    url: 'https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/WebSocket_colored_logo.svg/960px-WebSocket_colored_logo.svg.png',
+  },
+
+  // Testing & Tools
+  {
+    name: 'Jest',
+    url: 'https://jestjs.io/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/jest/jest-plain.svg',
+  },
+  {
+    name: 'Cypress',
+    url: 'https://www.cypress.io/',
+    logo: 'https://avatars.githubusercontent.com/u/8908513?s=200&v=4',
+  },
+  {
+    name: 'Git',
+    url: 'https://git-scm.com/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg',
+  },
+  {
+    name: 'GitHub',
+    url: 'https://github.com/',
+    logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg',
+  },
+  {
+    name: 'Zod',
+    url: 'https://zod.dev/',
+    logo: 'https://zod.dev/_next/image?url=%2Flogo%2Flogo-glow.png&w=640&q=100',
+  },
 ];
 
 export type TechItem = {
