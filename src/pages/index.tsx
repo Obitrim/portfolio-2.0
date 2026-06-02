@@ -14,7 +14,51 @@ import TechStackSection from '@/features/landing/tech-stack/index.tech-stack';
 export default function HomePage() {
   return (
     <Layout>
-      <Seo title='Paul | Portfolio' image='' />
+      <Seo
+        title='Paul Obitrim — Fullstack Software Engineer'
+        description='Paul Obitrim is a fullstack software engineer based in Accra, Ghana, specialising in React, Next.js, Vue.js, Node.js and TypeScript. Available for freelance, remote and full-time opportunities.'
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Person',
+            name: 'Paul Obitrim',
+            url: 'https://paulobitrim.dev',
+            image: 'https://paulobitrim.dev/graffiti-profile.png',
+            jobTitle: 'Software Engineer',
+            email: 'paulobitrim@gmail.com',
+            address: {
+              '@type': 'PostalAddress',
+              addressLocality: 'Accra',
+              addressCountry: 'GH',
+            },
+            sameAs: [
+              'https://github.com/Obitrim',
+              'https://www.linkedin.com/in/paul-obitrim-52304b169/',
+            ],
+            knowsAbout: [
+              'React.js',
+              'Next.js',
+              'Vue.js',
+              'TypeScript',
+              'JavaScript',
+              'Node.js',
+              'NestJS',
+              'PostgreSQL',
+              'MongoDB',
+              'Tailwind CSS',
+            ],
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            name: 'Paul Obitrim — Software Engineer',
+            url: 'https://paulobitrim.dev',
+            description:
+              'Portfolio of Paul Obitrim, a fullstack software engineer based in Accra, Ghana.',
+            author: { '@type': 'Person', name: 'Paul Obitrim' },
+          },
+        ]}
+      />
 
       <main className='w-screen overflow-x-hidden'>
         <HomeBannerSection />

@@ -133,7 +133,33 @@ const ResumePage = () => {
 
   return (
     <Layout>
-      <Seo title='Resume | Paul' />
+      <Seo
+        title='Resume — Paul Obitrim | Software Engineer'
+        description="View Paul Obitrim's professional resume — 5+ years building scalable web applications for startups and enterprises. React, Next.js, Vue.js and Node.js specialist based in Accra, Ghana."
+        keywords='Paul Obitrim resume, software engineer CV, frontend developer resume, React developer Ghana, fullstack developer'
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'ProfilePage',
+          name: 'Paul Obitrim — Software Engineer Resume',
+          url: 'https://paulobitrim.dev/resume',
+          mainEntity: {
+            '@type': 'Person',
+            name: 'Paul Obitrim',
+            jobTitle: 'Software Engineer',
+            url: 'https://paulobitrim.dev',
+            email: 'paulobitrim@gmail.com',
+            address: {
+              '@type': 'PostalAddress',
+              addressLocality: 'Accra',
+              addressCountry: 'GH',
+            },
+            sameAs: [
+              'https://github.com/Obitrim',
+              'https://www.linkedin.com/in/paul-obitrim-52304b169/',
+            ],
+          },
+        }}
+      />
 
       <main>
         <section

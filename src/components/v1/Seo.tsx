@@ -1,68 +1,75 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-// !STARTERCONF Change these default meta
+const SITE_URL = 'https://paulobitrim.dev';
+const SITE_NAME = 'Paul Obitrim — Software Engineer';
+const DEFAULT_DESCRIPTION =
+  'Paul Obitrim is a fullstack software engineer based in Accra, Ghana, specialising in React, Next.js, Vue.js, Node.js and TypeScript. Available for freelance, remote and full-time opportunities.';
+const DEFAULT_IMAGE = `${SITE_URL}/og.png`;
+const DEFAULT_KEYWORDS =
+  'Paul Obitrim, Software Engineer, Fullstack Developer, React Developer, Next.js Developer, TypeScript, Vue.js, Node.js, Frontend Developer, Ghana, Accra';
+
 const defaultMeta = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
-  siteName: 'Next.js + Tailwind CSS + TypeScript Starter',
-  description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://tsnext-tw.thcl.dev',
+  title: SITE_NAME,
+  siteName: SITE_NAME,
+  description: DEFAULT_DESCRIPTION,
+  url: SITE_URL,
   type: 'website',
   robots: 'follow, index',
-  /**
-   * No need to be filled, will be populated with openGraph function
-   * If you wish to use a normal image, just specify the path below
-   */
-  image: 'https://tsnext-tw.thcl.dev/images/large-og.png',
+  image: DEFAULT_IMAGE,
+  keywords: DEFAULT_KEYWORDS,
 };
 
 type SeoProps = {
   date?: string;
   templateTitle?: string;
+  keywords?: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  jsonLd?: Record<string, any> | Record<string, any>[];
 } & Partial<typeof defaultMeta>;
 
 export default function Seo(props: SeoProps) {
   const router = useRouter();
-  const meta = {
-    ...defaultMeta,
-    ...props,
-  };
+  const meta = { ...defaultMeta, ...props };
+
   meta['title'] = props.templateTitle
     ? `${props.templateTitle} | ${meta.siteName}`
     : meta.title;
 
-  // Use siteName if there is templateTitle
-  // but show full title if there is none
-  // !STARTERCONF Follow config for opengraph, by deploying one on https://github.com/theodorusclarence/og
-  // ? Uncomment code below if you want to use default open graph
-  // meta['image'] = openGraph({
-  //   description: meta.description,
-  //   siteName: props.templateTitle ? meta.siteName : meta.title,
-  //   templateTitle: props.templateTitle,
-  // });
+  const ogImage =
+    meta.image && meta.image.length > 0 ? meta.image : DEFAULT_IMAGE;
 
   return (
     <Head>
       <title>{meta.title}</title>
       <meta name='robots' content={meta.robots} />
-      <meta content={meta.description} name='description' />
-      <meta property='og:url' content={`${meta.url}${router.asPath}`} />
+      <meta name='description' content={meta.description} />
+      <meta name='keywords' content={meta.keywords} />
+      <meta name='author' content='Paul Obitrim' />
+
+      {/* Canonical */}
       <link rel='canonical' href={`${meta.url}${router.asPath}`} />
+
       {/* Open Graph */}
+      <meta property='og:url' content={`${meta.url}${router.asPath}`} />
       <meta property='og:type' content={meta.type} />
       <meta property='og:site_name' content={meta.siteName} />
-      <meta property='og:description' content={meta.description} />
       <meta property='og:title' content={meta.title} />
-      <meta name='image' property='og:image' content={meta.image} />
+      <meta property='og:description' content={meta.description} />
+      <meta property='og:image' content={ogImage} />
+      <meta property='og:image:width' content='1200' />
+      <meta property='og:image:height' content='630' />
+      <meta property='og:image:alt' content={meta.title} />
+      <meta property='og:locale' content='en_US' />
+
       {/* Twitter */}
       <meta name='twitter:card' content='summary_large_image' />
-      {/* // !STARTERCONF Remove or change to your handle */}
-      {/* <meta name='twitter:site' content='@th_clarence' /> */}
       <meta name='twitter:title' content={meta.title} />
       <meta name='twitter:description' content={meta.description} />
-      <meta name='twitter:image' content={meta.image} />
+      <meta name='twitter:image' content={ogImage} />
+      <meta name='twitter:image:alt' content={meta.title} />
+
+      {/* Article-specific */}
       {meta.date && (
         <>
           <meta property='article:published_time' content={meta.date} />
@@ -71,28 +78,33 @@ export default function Seo(props: SeoProps) {
             property='og:publish_date'
             content={meta.date}
           />
-          {/* // !STARTERCONF Remove or change to your name */}
           <meta
             name='author'
             property='article:author'
-            content='Theodorus Clarence'
+            content='Paul Obitrim'
           />
         </>
+      )}
+
+      {/* JSON-LD structured data */}
+      {props.jsonLd && (
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(props.jsonLd) }}
+        />
       )}
 
       {/* Favicons */}
       {favicons.map((linkProps) => (
         <link key={linkProps.href} {...linkProps} />
       ))}
-      <meta name='msapplication-TileColor' content='#ffffff' />
+      <meta name='msapplication-TileColor' content='#0d0d0d' />
       <meta name='msapplication-config' content='/favicon/browserconfig.xml' />
-      <meta name='theme-color' content='#ffffff' />
+      <meta name='theme-color' content='#0d0d0d' />
     </Head>
   );
 }
 
-// !STARTERCONF this is the default favicon, you can generate your own from https://realfavicongenerator.net/
-// ! then replace the whole /public/favicon folder and favicon.ico
 const favicons: Array<React.ComponentPropsWithoutRef<'link'>> = [
   {
     rel: 'apple-touch-icon',
@@ -115,7 +127,7 @@ const favicons: Array<React.ComponentPropsWithoutRef<'link'>> = [
   {
     rel: 'mask-icon',
     href: '/favicon/safari-pinned-tab.svg',
-    color: '#00e887',
+    color: '#f07020',
   },
   { rel: 'shortcut icon', href: '/favicon/favicon.ico' },
 ];

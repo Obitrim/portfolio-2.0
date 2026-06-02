@@ -1,13 +1,26 @@
-/**
- * @type {import('next-sitemap').IConfig}
- * @see https://github.com/iamvishnusankar/next-sitemap#readme
- */
+/** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  // !STARTERCONF Change the siteUrl
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  siteUrl: 'https://tsnext-tw.thcl.dev',
+  siteUrl: 'https://paulobitrim.dev',
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [{ userAgent: '*', allow: '/' }],
+    additionalSitemaps: ['https://paulobitrim.dev/sitemap.xml'],
   },
+  exclude: ['/blog', '/mini-projects', '/side-projects'],
+  changefreq: 'weekly',
+  priority: 0.7,
+  transform: async (config, path) => ({
+    loc: path,
+    changefreq:
+      path === '/' ? 'weekly' : path === '/projects' ? 'weekly' : 'monthly',
+    priority:
+      path === '/'
+        ? 1.0
+        : path === '/projects'
+        ? 0.9
+        : path === '/resume'
+        ? 0.8
+        : 0.7,
+    lastmod: new Date().toISOString(),
+  }),
 };

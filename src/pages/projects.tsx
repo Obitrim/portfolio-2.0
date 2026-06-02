@@ -31,7 +31,11 @@ const AllProjects = () => {
 
   return (
     <Layout>
-      <Seo title='Projects | Paul' image='' />
+      <Seo
+        title='Projects — Paul Obitrim | Software Engineer'
+        description='Explore production apps, side experiments and open-source work by Paul Obitrim — built with React, Next.js, Vue.js, TypeScript and Node.js.'
+        keywords='Paul Obitrim projects, React portfolio, Next.js projects, fullstack developer portfolio, web applications Ghana'
+      />
 
       <main>
         <section

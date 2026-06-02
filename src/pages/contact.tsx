@@ -111,7 +111,26 @@ const ContactPage = () => {
 
   return (
     <Layout>
-      <Seo title='Contact | Paul' />
+      <Seo
+        title='Contact Paul Obitrim — Hire a Software Engineer'
+        description='Get in touch with Paul Obitrim for freelance projects, full-time roles, or collaborations. Available for remote and on-site opportunities. Based in Accra, Ghana.'
+        keywords='hire software engineer Ghana, contact Paul Obitrim, freelance React developer, hire fullstack developer'
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'ContactPage',
+          name: 'Contact Paul Obitrim',
+          url: 'https://paulobitrim.dev/contact',
+          description:
+            'Contact page for Paul Obitrim, a fullstack software engineer available for freelance and full-time opportunities.',
+          mainEntity: {
+            '@type': 'Person',
+            name: 'Paul Obitrim',
+            email: 'paulobitrim@gmail.com',
+            telephone: '+233544923771',
+            url: 'https://paulobitrim.dev',
+          },
+        }}
+      />
 
       <main>
         {/* ── Hero ─────────────────────────────────────────────── */}
