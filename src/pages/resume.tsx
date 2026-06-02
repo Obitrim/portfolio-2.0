@@ -172,9 +172,9 @@ const ResumePage = () => {
               Ghana and beyond.
             </p>
             <div className='mt-6 flex flex-wrap gap-3'>
-              <a href='/resume.pdf' download className='btn-primary'>
-                DOWNLOAD PDF ↓
-              </a>
+              <Link href='/resume#experience' download className='btn-primary'>
+                Work Experience ↓
+              </Link>
               <Link href='/contact' className='btn-outline-white'>
                 HIRE ME →
               </Link>
@@ -188,7 +188,10 @@ const ResumePage = () => {
           style={{ backgroundColor: '#0a0a0a' }}
         >
           <AppContainer>
-            <div className='grid grid-cols-1 gap-16 md:grid-cols-3 md:items-start'>
+            <div
+              className='grid grid-cols-1 gap-16 md:grid-cols-3 md:items-start'
+              id='experience'
+            >
               <div className='md:col-span-2'>
                 <div className={clsxm('mb-10', isInView && 'animate-spray-in')}>
                   <h2 className='graffiti-heading text-3xl md:text-4xl'>

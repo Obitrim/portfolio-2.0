@@ -174,7 +174,7 @@ const ContactPage = () => {
                   <span
                     className='font-marker italic'
                     style={{
-                      fontSize: 'clamp(4.5rem, 9vw, 9rem)',
+                      fontSize: 'clamp(4.5rem, 9vw, 7rem)',
                       color: 'var(--graffiti-orange)',
                       lineHeight: 0.88,
                       textShadow: '4px 4px 0 rgba(240,112,32,0.2)',

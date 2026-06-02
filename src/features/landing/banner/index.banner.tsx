@@ -192,7 +192,7 @@ const HomeBannerSection = () => {
                   fontFamily: "'Space Grotesk', sans-serif",
                 }}
               >
-                DOWNLOAD CV ↓
+                MY CV ↓
               </Link>
             </div>
 
