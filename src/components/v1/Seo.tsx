@@ -5,7 +5,7 @@ const SITE_URL = 'https://paulobitrim.dev';
 const SITE_NAME = 'Paul Obitrim — Software Engineer';
 const DEFAULT_DESCRIPTION =
   'Paul Obitrim is a fullstack software engineer based in Accra, Ghana, specialising in React, Next.js, Vue.js, Node.js and TypeScript. Available for freelance, remote and full-time opportunities.';
-const DEFAULT_IMAGE = `${SITE_URL}/og.png`;
+const DEFAULT_IMAGE = `${SITE_URL}/og.jpg`;
 const DEFAULT_KEYWORDS =
   'Paul Obitrim, Software Engineer, Fullstack Developer, React Developer, Next.js Developer, TypeScript, Vue.js, Node.js, Frontend Developer, Ghana, Accra';
 
@@ -50,24 +50,30 @@ export default function Seo(props: SeoProps) {
       {/* Canonical */}
       <link rel='canonical' href={`${meta.url}${router.asPath}`} />
 
-      {/* Open Graph */}
+      {/* ── Open Graph (Facebook, LinkedIn, WhatsApp, Slack, Discord) ── */}
       <meta property='og:url' content={`${meta.url}${router.asPath}`} />
       <meta property='og:type' content={meta.type} />
       <meta property='og:site_name' content={meta.siteName} />
       <meta property='og:title' content={meta.title} />
       <meta property='og:description' content={meta.description} />
       <meta property='og:image' content={ogImage} />
+      {/* secure_url required by WhatsApp & LinkedIn */}
+      <meta property='og:image:secure_url' content={ogImage} />
+      <meta property='og:image:type' content='image/jpeg' />
       <meta property='og:image:width' content='1200' />
       <meta property='og:image:height' content='630' />
       <meta property='og:image:alt' content={meta.title} />
       <meta property='og:locale' content='en_US' />
 
-      {/* Twitter */}
+      {/* ── Twitter / X ── */}
       <meta name='twitter:card' content='summary_large_image' />
       <meta name='twitter:title' content={meta.title} />
       <meta name='twitter:description' content={meta.description} />
       <meta name='twitter:image' content={ogImage} />
       <meta name='twitter:image:alt' content={meta.title} />
+
+      {/* ── LinkedIn-specific ── */}
+      <meta property='linkedin:owner' content='paul-obitrim-52304b169' />
 
       {/* Article-specific */}
       {meta.date && (
