@@ -40,6 +40,8 @@
   --tw-color-primary-700: 3 105 161;
   --tw-color-primary-800: 7 89 133;
   --tw-color-primary-900: 12 74 110;
+
+  scroll-behavior: smooth;
 }
 
 @layer base {

@@ -12,7 +12,7 @@ const links = [
   { href: '/#about', label: 'About' },
   { href: '/#skills', label: 'Skills' },
   { href: '/#projects', label: 'Projects' },
-  { href: '/blog', label: 'Blog' },
+  // { href: '/blog', label: 'Blog' },
   { href: '/resume', label: 'Resume' },
 ];
 
@@ -27,7 +27,7 @@ export default function Header() {
 
   return (
     <header
-      className='sticky top-0 z-50'
+      className='!sticky !top-0 z-50'
       style={{
         backgroundColor: 'var(--strip-dark)',
         borderBottom: '1px solid #1e1e1e',

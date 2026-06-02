@@ -48,7 +48,7 @@ const HomeBannerSection = () => {
         )}
       >
         <Image
-          src='/graffiti-profile.png'
+          src='/me_with_laptop_teacup_and_graffiti_background.png'
           alt='Paul — Software Engineer'
           fill
           priority
