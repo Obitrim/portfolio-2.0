@@ -43,7 +43,7 @@ const HomeBannerSection = () => {
       {/* Desktop profile image — spans full section height, right half */}
       <div
         className={clsxm(
-          'pointer-events-none absolute inset-y-0 right-0 z-10 hidden w-1/2 md:block',
+          'pointer-events-none absolute inset-y-0 right-0 z-10 hidden w-1/2  md:block',
           visible && 'animate-spray-in delay-300'
         )}
       >
@@ -53,7 +53,7 @@ const HomeBannerSection = () => {
           fill
           priority
           sizes='50vw'
-          className='object-contain object-bottom drop-shadow-2xl'
+          className='-translate-x-1/3 object-contain object-right drop-shadow-2xl'
         />
       </div>
 
