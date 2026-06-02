@@ -265,7 +265,7 @@ const ProjectCard = ({
             />
             <h3
               onClick={viewProject}
-              className='graffiti-heading text-lg text-white'
+              className='graffiti-heading text-lg capitalize text-white'
             >
               {name}
             </h3>
