@@ -10,6 +10,21 @@ import Seo from '@/components/v1/Seo';
 
 const experiences = [
   {
+    role: 'Software Developer',
+    company: 'Sailboatlabs',
+    period: 'Sep 2021 — Jun 2025',
+    location: 'Remote',
+    points: [
+      'Built and optimized data-intensive frontend modules used across internal enterprise platforms, improving rendering performance by 50% through efficient state handling and reduction of unnecessary re-renders.',
+      'Implemented infinite data fetching and caching strategies that improved responsiveness and reduced load times for large datasets.',
+      'Developed reusable UI components and frontend architecture patterns that improved consistency and accelerated feature delivery across projects.',
+      'Collaborated closely with backend engineers and system analysts to design scalable software solutions aligned with business and technical requirements.',
+      'Wrote end-to-end tests to improve reliability and reduce production regressions.',
+      'Mentored junior developers on clean architecture, maintainable code structure, debugging, and frontend best practices.',
+    ],
+    stack: ['React', 'TypeScript', 'Node.js', 'Tailwind CSS', 'Jest'],
+  },
+  {
     role: 'Frontend Developer',
     company: 'Teamwell',
     period: 'Apr 2023 — Dec 2023',
@@ -23,25 +38,11 @@ const experiences = [
     ],
     stack: ['Vue.js', 'TypeScript', 'Tailwind CSS', 'Directus', 'Pinia'],
   },
-  {
-    role: 'Software Developer',
-    company: 'Sailboatlabs',
-    period: 'Sep 2021 — Apr 2023',
-    location: 'Remote',
-    points: [
-      'Built and optimized data-intensive frontend modules used across internal enterprise platforms, improving rendering performance by 50% through efficient state handling and reduction of unnecessary re-renders.',
-      'Implemented infinite data fetching and caching strategies that improved responsiveness and reduced load times for large datasets.',
-      'Developed reusable UI components and frontend architecture patterns that improved consistency and accelerated feature delivery across projects.',
-      'Collaborated closely with backend engineers and system analysts to design scalable software solutions aligned with business and technical requirements.',
-      'Wrote end-to-end tests to improve reliability and reduce production regressions.',
-      'Mentored junior developers on clean architecture, maintainable code structure, debugging, and frontend best practices.',
-    ],
-    stack: ['React', 'TypeScript', 'Node.js', 'Tailwind CSS', 'Jest'],
-  },
+
   {
     role: 'Lead Software Developer',
     company: 'Flinchub',
-    period: 'June 2022 — Apr 2023',
+    period: 'June 2020 — Apr 2023',
     location: 'Remote',
     points: [
       'Led a team of developers through the planning, development, and deployment of web applications across multiple client projects.',
@@ -55,7 +56,7 @@ const experiences = [
   {
     role: 'Software Engineer',
     company: 'Ghana Cocoa Board',
-    period: 'Oct 2021 — Dec 2022',
+    period: 'Oct 2021 — Sep 2022',
     location: 'Accra/Ghana',
     points: [
       'Participated in the development and maintenance of enterprise software solutions for internal operational systems.',
